@@ -1,8 +1,12 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 class Header extends Component {
   render() {
-    return 'oi';
+    return (
+      <header>
+        <h1>Movie Cards</h1>
+      </header>
+    );
   }
 }
 
