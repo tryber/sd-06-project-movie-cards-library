@@ -9,14 +9,14 @@ class MovieList extends Component {
       <div className="movie-list">
         {movies.map((movie) => (
           <MovieCard
-          key={movie.title}
-          movie={movie}/>
+            key={movie.title}
+            movie={movie} />
         ))}
       </div>
     );
   }
 }
 
-MovieList.propTypes = { movie: PropTypes.arrayOf.isRequired };
+MovieList.propTypes = { movies: PropTypes.arrayOf.isRequired };
 
 export default MovieList;
