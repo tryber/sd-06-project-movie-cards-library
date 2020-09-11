@@ -9,12 +9,12 @@ class MovieList extends Component {
       <div className="movielist">
         {movies.map((movie) => (
             <MovieCard
-            key={movie.title}
-            title={movie.title}
-            subtitle={movie.subtitle}
-            storyline={movie.storyline}
-            imagePath={movie.imagePath}
-          />
+              key={movie.title}
+              title={movie.title}
+              subtitle={movie.subtitle}
+              storyline={movie.storyline}
+              imagePath={movie.imagePath}
+            />
         ))}
       </div>
     );
