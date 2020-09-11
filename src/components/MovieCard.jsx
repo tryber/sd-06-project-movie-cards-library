@@ -18,12 +18,12 @@ class MovieCard extends React.Component {
     }
 }
 MovieCard.propTypes = { movie: PropTypes.objectOf(PropTypes.string).isRequired}
-MovieCard.propTypes = {
+// MovieCard.propTypes = {
 
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    imagePatch: PropTypes.string
-};
+//     title: PropTypes.string,
+//     subtitle: PropTypes.string,
+//     storyline: PropTypes.string,
+//     imagePatch: PropTypes.string
+// };
 
 export default MovieCard;
