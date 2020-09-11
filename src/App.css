@@ -6,8 +6,7 @@ body {
 
 .movie-card-header {
   align-items: center;
-  background: repeating-linear-gradient(black, rgb(146, 146, 146), white,
-  rgb(145, 145, 145), black);
+  background: repeating-linear-gradient(black, gray, white, gray, black);
   display: flex;
   height: 100px;
   justify-content: center;
@@ -115,10 +114,8 @@ body {
 
 @keyframes loop {
   from {
-    transform: rotateY(0deg);
-  }
-  
+    transform: rotateY(0deg); }
+
   to {
-    transform: rotateY(360deg);
-  }
+    transform: rotateY(360deg); }
 }
