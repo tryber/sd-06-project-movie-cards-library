@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
 
 class MovieList extends Component {
   render() {
-    const teste = <h1>teste</h1>;
-    return teste;
+    return 1;
   }
 }
 
