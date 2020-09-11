@@ -9,6 +9,6 @@ class Rating extends Component {
   }
 }
 
-Rating.propTypes = { rating: PropTypes.number, };
+Rating.propTypes = { rating: PropTypes.number,};
 
 export default Rating;
