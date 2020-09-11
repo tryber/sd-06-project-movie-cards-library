@@ -29,4 +29,12 @@ MovieCard.propTypes = {
   imagePath: PropTypes.string,
 };
 
+MovieCard.defaultProps = {
+  title: 'title',
+  subtitle: 'subtitle',
+  storyline: 'storyline',
+  rating: 'rating',
+  imagePath: 'imagePath',
+};
+
 export default MovieCard;
