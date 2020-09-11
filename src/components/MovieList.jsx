@@ -7,15 +7,15 @@ class MovieList extends Component {
   render() {
     return (
       <div className="movielist">
-        {movies.map((movie) => {
-          return (<MovieCard
+        {movies.map((movie) => (
+            <MovieCard
             key={movie.title}
             title={movie.title}
             subtitle={movie.subtitle}
             storyline={movie.storyline}
             imagePath={movie.imagePath}
-          />);
-        })}
+          />
+        ))}
       </div>
     );
   }
