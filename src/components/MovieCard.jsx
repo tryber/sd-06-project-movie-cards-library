@@ -27,8 +27,8 @@ MovieCard.propTypes = {
     .oneOfType([
       PropTypes.number,
       PropTypes.string,
-    ]);
-  );
+    ])
+  )
 };
 
 export default MovieCard;
