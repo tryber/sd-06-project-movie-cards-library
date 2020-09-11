@@ -5,7 +5,7 @@ import MovieCard from './MovieCard';
 class MovieList extends React.Component {
   render() {
     return (
-      <div>
+      <div className='movie-list'>
         {this.props.movies.map((movie) => <MovieCard key={movie.title} movie={movie} />)}
       </div>
       // Aqui recebemos um conjunto de movies ( oarray de objetos)
