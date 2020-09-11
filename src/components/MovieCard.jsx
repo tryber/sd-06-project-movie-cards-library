@@ -29,12 +29,12 @@ MovieCard.defaultProps = {
   storyline: 'storyline',
   rating: 'rating',
   imagePath: 'imagePath',
-  movie : { 
+  movie: {
     title: 'title',
     subtitle: 'subtitle',
     storyline: 'storyline',
     rating: 'rating',
-    imagePath: 'image' 
+    imagePath: 'image',
   },
 };
 
