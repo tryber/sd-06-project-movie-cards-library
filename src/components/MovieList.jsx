@@ -20,7 +20,7 @@ MovieList.propTypes = {
     storyline: PropTypes.string,
     imagePath: PropTypes.string,
     rating: PropTypes.number,
-  })
+  });
 }
 
 export default MovieList;
