@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
@@ -13,7 +12,5 @@ function App() {
     </div>
   );
 }
-
-App.prototype = { movies: PropTypes.array };
 
 export default App;

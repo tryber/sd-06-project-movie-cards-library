@@ -12,6 +12,6 @@ class Rating extends Component {
 
 Rating.defaulProps = { rating: {} };
 
-Rating.propTypes = { rating: PropTypes.object };
+Rating.propTypes = { rating: PropTypes.objectOf.isRequired };
 
 export default Rating;
