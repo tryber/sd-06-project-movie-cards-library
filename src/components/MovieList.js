@@ -17,7 +17,9 @@ MovieList.defaultProps = {
 };
 
 MovieList.PropTypes = {
-  movies: PropTypes.element,
+  movies: {
+    map: PropTypes.func,
+  },
 };
 
 export default MovieList;
