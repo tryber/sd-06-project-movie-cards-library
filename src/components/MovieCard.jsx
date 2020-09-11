@@ -4,27 +4,24 @@ import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    const { title, subtitle, storyline, imagePath, rating } = this.props;
+    const { movie } = this.props;
     return (
-      <div className="moviecard">
-        <div>
-          <img src={imagePath} alt={`Movie: ${title}`} />
+      <div className="movie-card">
+        <div className="movie-card-body">
+          <div classname="movie-card-image">
+        <img src={movie.imagePath} alt={`Movie: ${movie.title}`} />
         </div>
-        <br />
-        <h4>{title}</h4>
-        <h5>{subtitle}</h5>
-        <p>{storyline}</p>
-        <Rating rating={rating} />
+          <br />
+          <h4 className="movie-card-title">{movie.title}</h4>
+          <h5 className="movie-card-subtitle">{movie.subtitle}</h5>
+          <p className="movie-card-storyline">{movie.storyline}</p>
+        </div>
+        <Rating className="movie-card-rating" rating={movie.rating} />
       </div>
     );
   }
 }
 
-MovieCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  imagePath: PropTypes.string.isRequired,
-};
+MovieCard.propTypes = { movie: PropTypes.objectOf.isRequired };
 
 export default MovieCard;
