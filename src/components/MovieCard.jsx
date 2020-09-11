@@ -5,7 +5,7 @@ import '../App.css';
 
 class MovieCard extends Component {
   render() {
-    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
+    const { title, subtitle, storyline, rating, imagePath } = this.props.movie;
 
     return (
       <div className="movie-card">
