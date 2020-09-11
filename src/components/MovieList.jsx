@@ -9,19 +9,19 @@ class MovieList extends Component {
 
     return (
       <div className="movie-list">{
-        movies.map(item => <MovieCard movie={item} key={item.title} />)
+        movies.map((item) => <MovieCard movie={item} key={item.title} />)
       }</div>
     );
   }
 }
 
 MovieList.propTypes = {
-  movie: PropTypes.exact({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.number,
-    imagePath: PropTypes.string,
+  movies: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    imagePath: PropTypes.string.isRequired,
   }).isRequired,
 
 };
