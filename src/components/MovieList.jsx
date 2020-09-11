@@ -6,13 +6,13 @@ class MovieList extends Component {
     const { movies } = this.props;
     return (
       movies.map(movie => 
-      <MovieCard
-        key={movie.title}
-        title={movie.title}
-        subtitle={movie.subtitle}
-        image={movie.imagePath}
-      />
-    )
+        <MovieCard
+          key={movie.title}
+          title={movie.title}
+          subtitle={movie.subtitle}
+          imagePath={movie.imagePath}
+        />
+      )
     )
   }
 }
