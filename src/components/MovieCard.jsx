@@ -24,7 +24,7 @@ class MovieCard extends React.Component {
 
 export default MovieCard;
 
-MovieCard.defaultProps = {
+const props = {
   movie: PropTypes.exact({
     title: PropTypes.string,
     subtitle: PropTypes.string,
@@ -34,12 +34,6 @@ MovieCard.defaultProps = {
   }),
 };
 
-MovieCard.propTypes = {
-  movie: PropTypes.exact({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    imagePage: PropTypes.string,
-    rating: PropTypes.number,
-  }),
-};
+MovieCard.defaultProps = props;
+
+MovieCard.propTypes = props;
