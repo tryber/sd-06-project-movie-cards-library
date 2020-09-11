@@ -20,7 +20,7 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.defaultProps = {
-  title:'title',
+  title: 'title',
   subtitle: 'subtitle',
   storyline: 'storyline',
   imagePath: 'imagePath',

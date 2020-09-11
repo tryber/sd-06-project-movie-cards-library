@@ -7,14 +7,14 @@ class MovieList extends React.Component {
   render() {
     return (
       movies.map((movie) => (
-      <MovieCard
-      key={movie.title}
-      title={movie.title}
-      subtitle={movie.subtitle}
-      storyline={movie.storyline}
-      imagePath={movie.imagePath}
-      rating={movie.rating}
-      />
+        <MovieCard
+        key={movie.title}
+        title={movie.title}
+        subtitle={movie.subtitle}
+        storyline={movie.storyline}
+        imagePath={movie.imagePath}
+        rating={movie.rating}
+        />
       ))
     );
   }
