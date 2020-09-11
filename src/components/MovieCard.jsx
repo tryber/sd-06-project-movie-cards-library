@@ -1,14 +1,21 @@
 import React from 'react';
-import MovieList from './MovieList';
 
 class MovieCard extends React.Component {
-  render() {
+	render() {
+		const { title, subtitle, storyline, rating, imagePath } = this.props.movie;
+
 		return (
 			<div>
-				{this.props.movies.map(movie => <MovieList movie={movie} />)};
+				<div>
+					<p> {title} </p>
+					<p> {subtitle} </p>
+					<p> {storyline} </p>
+					<p> {rating} </p>
+					<img src={imagePath} />
+				</div>
 			</div>
-		)
-	}
+		);
+  }
 }
 
 export default MovieCard;
