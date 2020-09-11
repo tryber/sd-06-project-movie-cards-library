@@ -10,6 +10,6 @@ class Rating extends Component {
   }
 }
 
-Rating.porpTypes = { rating: PropTypes.number.isRequired };
+Rating.propTypes = { rating: PropTypes.number.isRequired };
 
 export default Rating;
