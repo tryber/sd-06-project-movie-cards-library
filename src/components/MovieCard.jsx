@@ -1,1 +1,1 @@
-// implement MovieCard component here
+import Rating from './Rating';
