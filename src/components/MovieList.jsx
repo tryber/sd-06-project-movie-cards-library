@@ -5,7 +5,7 @@ class MovieList extends Component {
   render() {
     const { movies } = this.props;
     return (
-      movies.map(movie => 
+      movies.map(movie =>
         <MovieCard
           key={movie.title}
           title={movie.title}
@@ -13,7 +13,7 @@ class MovieList extends Component {
           imagePath={movie.imagePath}
         />
       )
-    )
+    );
   }
 }
 
