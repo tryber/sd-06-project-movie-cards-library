@@ -11,7 +11,7 @@ class App extends Component {
         <Header />
         <MovieList movies={movies} />
       </div>
-    )
+    );
   }
 }
 

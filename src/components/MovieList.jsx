@@ -5,18 +5,24 @@ import '../App.css';
 
 class MovieList extends Component {
   render() {
-    const movies = this.props.movies;
+    const { movies } = this.props;
 
     return (
       <div className="movie-list">{
-        movies.map(item => <MovieCard movie={item} key={item.title} />)
+        movies.map(item => (<MovieCard movie={item} key={item.title}) />)
       }</div>
-    )
+    );
   }
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.array,
+  movie: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    subtitle: PropTypes.string,
+    imagePath: PropTypes.string,
+  }).isRequired
+
 };
 
 export default MovieList;
