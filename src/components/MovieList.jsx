@@ -8,33 +8,33 @@ class MovieList extends Component {
       <div className="movie-list">
         {this.props.movies.map((el) => 
            (
-            <MovieCard
-              key={el.title}
-              movie={{
-                title: el.title,
-                subtitle: el.subtitle,
-                storyline: el.storyline,
-                rating: el.rating,
-                imagePath: el.imagePath,
+             <MovieCard
+               key={el.title}
+               movie={{
+                 title: el.title,
+                 subtitle: el.subtitle,
+                 storyline: el.storyline,
+                 rating: el.rating,
+                 imagePath: el.imagePath,
               }}
             />
-          )
+          ),
         )}
       </div>
     );
   }
 }
 MovieList.defaultProps = {
-  movies: [
+  movie: [
     {
       title: 'title',
       subtitle: 'subtitle',
       storyline: 'storyline',
       rating: 'rating',
       imagePath: 'image',
-    }
-  ]
-}
+    },
+  ],
+};
 
 MovieList.propTypes = { movies: PropTypes.isRequired };
 
