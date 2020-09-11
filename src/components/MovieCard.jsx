@@ -9,7 +9,9 @@ class MovieCard extends Component {
     return (
       <div className="movie-card">
         <div className="movie-card-body">
-          <img src={this.props.movie.imagePath} alt={this.props.movie.title} className="movie-card-image" />
+          <img src={this.props.movie.imagePath}
+          alt={this.props.movie.title}
+          className="movie-card-image" />
           <h4 className="movie-card-title">{this.props.movie.title}</h4>
           <h5 className="movie-card-subtitle">{this.props.movie.subtitle}</h5>
           <p className="movie-card-storyline">{this.props.movie.storyline}</p>
@@ -21,7 +23,8 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  url: PropTypes.string.isRequired,
+  movie: PropTypes.arrayOf.isRequired,
+  imagePath: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   synopsis: PropTypes.string.isRequired,
