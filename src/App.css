@@ -83,25 +83,25 @@ body {
 }
 
 .App {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
 .moviecard {
   background-color: rgb(200, 200, 200);
-  border: 4px dotted black; 
-  max-width: 400px;
+  border: 4px dotted black;
   margin-top: 50px;
-}
-
-.moviecard img{
   max-width: 400px;
 }
 
-.App h1 {
-  background-color: rgb(245,197,24);
+.moviecard img {
+  max-width: 400px;
+}
+
+.header {
+  background-color: rgb(245, 197, 24);
   border-radius: 20%;
   padding: 30px;
 }
