@@ -4,17 +4,17 @@ import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    const { imagem, title, subtitle, description, rating } = this.props;
+    const { imagePath, title, subtitle, storyline, rating } = this.props.movie;
     return (<div className="movie-card">
       <div>
-        <img src={imagem} className="movie-card-image" alt={title} />
+        <img src={imagePath} className="movie-card-image" alt={title} />
       </div>
       <div>
         <h4 className="movie-card-title">{title}</h4>
         <h5 className="movie-card-subtitle">{subtitle}</h5>
-        <p className="movie-card-storyline">{description}</p>
+        <p className="movie-card-storyline">{storyline}</p>
       </div>
-      <div className="movie-card-rating">
+      <div>
         <Rating className="rating" rating={rating} />
       </div>
     </div>);
@@ -22,11 +22,13 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  imagem: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  rating: PropTypes.number.isRequired,
+  movie: PropTypes.exact({
+    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default MovieCard;

@@ -7,12 +7,8 @@ class MovieList extends Component {
     return (<div className="movie-list">
       {this.props.movies.map((movie) =>
         <MovieCard
+          movie={movie}
           key={movie.title}
-          imagem={movie.imagePath}
-          title={movie.title}
-          subtitle={movie.subtitle}
-          description={movie.storyline}
-          rating={movie.rating}
         />,
       )}
     </div>
