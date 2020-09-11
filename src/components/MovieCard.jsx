@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 class MovieCard extends Component {
   render() {
-    return <span>Insert Movie Here</span>;
+    const { title } = this.props;
+    return (
+      <span>
+        {title}
+      </span>
+    );
   }
 }
+
+// MovieCard.propTypes = { title: PropTypes.string };
 
 export default MovieCard;
