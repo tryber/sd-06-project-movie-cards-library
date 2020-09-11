@@ -11,19 +11,19 @@ class MovieCard extends Component {
         <h5>{subtitle}</h5>
         <p>{storyline}</p>
         <Rating rating={rating} />
-        <img src={imagePath} alt={title}/>
+        <img src={imagePath} alt={title} />
       </div>
     );
   }
-};
+}
 
 MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string.isRequired,
     storyline: PropTypes.string.isRequired,
-    imagePath: PropTypes.string.isRequired
-  })
-}
+    imagePath: PropTypes.string.isRequired,
+  }),
+};
 
 export default MovieCard;
