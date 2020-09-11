@@ -12,8 +12,10 @@ class MovieList extends Component {
   }
 }
 
-MovieList.PropTypes = { movies: PropTypes.element };
-
 MovieList.defaultProps = { movies: [1, 2, 3, 4] };
+
+MovieList.PropTypes = { movies: PropTypes.array };
+
+
 
 export default MovieList;
