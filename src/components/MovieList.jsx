@@ -16,12 +16,13 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
-  movie: PropTypes.shape({
+  movie: PropTypes.exact({
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
     imagePath: PropTypes.string,
-  }).isRequired
+  }).isRequired,
 
 };
 
