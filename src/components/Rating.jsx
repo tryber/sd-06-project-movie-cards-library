@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Rating extends Component {
-  static defaultProps = {
-    rating: ''
-  };
-  
   render() {
     const { rating } = this.props;
     return (
@@ -14,8 +10,6 @@ class Rating extends Component {
   }
 }
 
-Rating.propTypes = {
-  rating: PropTypes.string
-};
+Rating.propTypes = { rating: PropTypes.number.isRequired };
 
 export default Rating;
