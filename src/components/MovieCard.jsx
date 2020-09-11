@@ -6,9 +6,9 @@ class MovieCard extends Component {
 
     const { imagePath } = movie;
 
-    return <div>
-      <img src={imagePath} alt=""/>
-    </div>;
+    return (<div>
+      <img src={imagePath} alt="" />
+    </div>);
   }
 }
 
