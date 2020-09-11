@@ -7,12 +7,10 @@ class Rating extends Component {
 
     return (
       <div className="rating">{rating}</div>
-    )
-  };
+    );
+  }
 }
 
-Rating.propTypes = {
-  rating: PropTypes.number
-}
+Rating.propTypes = { rating: PropTypes.number };
 
 export default Rating;
