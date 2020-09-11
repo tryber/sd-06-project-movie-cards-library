@@ -24,7 +24,7 @@ const obj = {
   subtitle: string,
   storyline: string,
   rating: number,
-  imagePath: string
+  imagePath: string,
 };
 MovieCard.propTypes = { movie: PropTypes.shape(obj).isRequired };
 

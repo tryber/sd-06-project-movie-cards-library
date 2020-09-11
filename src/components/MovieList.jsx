@@ -23,7 +23,7 @@ const obj = {
   subtitle: string,
   storyline: string,
   rating: number,
-  imagePath: string
+  imagePath: string,
 };
 MovieList.propTypes = { movies: PropTypes.arrayOf(PropTypes.shape(obj)).isRequired };
 
