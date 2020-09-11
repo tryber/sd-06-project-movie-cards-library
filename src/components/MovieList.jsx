@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MovieCard from './MovieCard'
+import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
@@ -16,7 +16,7 @@ class MovieList extends Component {
               storyline={movie.storyline}
               rating={movie.rating}
               imagePath={movie.imagePath}
-          />
+            />
           );
         })}
       </section>
