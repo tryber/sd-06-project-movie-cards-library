@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Rating from './Rating.jsx';
 
 
 class MovieCard extends Component {
   render() {
-    const { title, subtitle, storyline, imagePath } = this.props;
+    const { movie } = this.props;
     return (
       <div className="movieCard">
-        <h4>{title}</h4>
-        <h5>{subtitle}</h5>
-        <p>{storyline}</p>
-        <image className="movieImage" src={imagePath} alt={title} />
+        <h4>{movie.title}</h4>
+        <h5>{movie.subtitle}</h5>
+        <p>{movie.storyline}</p>
+        <img src={movie.imagePath} alt={movie.title} />
+        <Rating rating={movie.rating} />
       </div>
     );
   }
 }
 
-MovieCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  storyline: PropTypes.string.isRequired,
-  imagePath: PropTypes.string.isRequired,
-};
+MovieCard.propTypes = { movie: PropTypes.objectOf.isRequired };
 export default MovieCard;
