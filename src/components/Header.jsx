@@ -9,5 +9,6 @@ class Header extends Component {
     </header>);
   }
 }
-Header.PropTypes = { h1: PropTypes.string };
+Header.propTypes = { h1: PropTypes.string };
+Header.defaultProps = { h1: '' };
 export default Header;

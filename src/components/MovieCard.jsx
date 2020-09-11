@@ -21,7 +21,7 @@ class MovieCard extends Component {
   }
 }
 
-MovieCard.PropTypes = {
+MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
@@ -29,6 +29,7 @@ MovieCard.PropTypes = {
     rating: PropTypes.number,
   }),
 };
+MovieCard.defaultProps = { movie: '' };
 
 export default MovieCard;
 
