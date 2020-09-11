@@ -114,6 +114,7 @@ body {
 
 @keyframes loop {
   from {
+    
     transform: rotateY(0deg); }
 
   to {
