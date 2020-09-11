@@ -14,10 +14,10 @@ class MovieList extends Component {
                 subtitle: el.subtitle,
                 storyline: el.storyline,
                 rating: el.rating,
-                imagePath: el.imagePath,  
+                imagePath: el.imagePath,
               }}
             />
-          )
+          );
         })}
       </div>
     );
