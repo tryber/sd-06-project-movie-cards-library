@@ -9,10 +9,15 @@ class MovieCard extends React.Component {
   }
 }
 
-MovieCard.propTypes = ({
-  movie: PropTypes.shape(
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
     title: PropTypes.string,
-  ).isRequired;
-})
+  }).isRequired;
+}
 
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    //Todos os seus tipos aqui dentro
+  }).isRequired
+}
 export default MovieCard;
