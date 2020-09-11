@@ -20,4 +20,8 @@ class MovieList extends Component {
   }
 }
 
+MovieList.protoType = {
+  movies: PropTypes.string,  
+};
+
 export default MovieList;
