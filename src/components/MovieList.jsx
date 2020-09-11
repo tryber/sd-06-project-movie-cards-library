@@ -5,13 +5,11 @@ class MovieList extends React.Component {
   render() {
     const { movies } = this.props;
     return (
-    <h1>{movies[0].title}</h1>
+      <h1>{movies[0].title}</h1>
     );
   }
 }
 
-MovieList.propTypes = {
-  movies: PropTypes.array
-}
+MovieList.propTypes = { movies: PropTypes.arrayOf(Object), };
 
 export default MovieList;
