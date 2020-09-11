@@ -6,20 +6,13 @@ export default class MovieList extends Component {
   render() {
     const { movies } = this.props;
     return (
-      <>
+      <div>
         {movies.map((movie) => (
           <MovieCard movie={movie} key={movie.title} />
         ))}
-      </>
+      </div>
     );
   }
 }
 
-MovieList.propTypes = {
-  movies: PropTypes.exact({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    rating: PropTypes.number,
-    imagePath: PropTypes.string,
-  }).isRequired,
-};
+MovieList.propTypes = { movies: PropTypes.arrayOf(PropTypes.object).isRequired };
