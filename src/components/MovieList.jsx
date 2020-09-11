@@ -2,7 +2,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
-import Rating from './Rating';
 
 class MovieList extends React.Component {
   render() {
@@ -11,7 +10,7 @@ class MovieList extends React.Component {
     .map((movie) => (
       <li className="movie-card" key={movie.title}>
         <MovieCard
-          movie = {movie}
+          movie={movie}
         />
       </li>
     ));
