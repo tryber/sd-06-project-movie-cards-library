@@ -17,6 +17,6 @@ class MovieCard extends Component {
   }
 }
 
-MovieCard.propType = { movie: PropTypes.shape({}) };
+MovieCard.propTypes = { movie: PropTypes.shape({}) };
 
 export default MovieCard;
