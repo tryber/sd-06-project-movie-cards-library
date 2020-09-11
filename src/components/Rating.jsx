@@ -11,6 +11,8 @@ class Rating extends Component {
   }
 }
 
+MovieList.defaultProps = { rating: 'rating' };
+
 Rating.propTypes = { rating: propTypes.string };
 
 export default Rating;
