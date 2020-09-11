@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Rating extends React.Component {
   render() {
@@ -7,5 +8,13 @@ class Rating extends React.Component {
     );
   }
 }
+
+// Rating.propTypes = {
+//   title: PropTypes.string,
+//   subtitle: PropTypes.string,
+//   storyline: PropTypes.string,
+//   imagePath: PropTypes.string,
+//   rating: PropTypes.number,
+// };
 
 export default Rating;
