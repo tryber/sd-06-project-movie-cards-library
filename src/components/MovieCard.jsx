@@ -4,7 +4,8 @@ import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props;
+    const { movie } = this.props;
+    const { title, subtitle, storyline, rating, imagePath } = movie;
     return (
       <div className="movie-card">
         <img src={imagePath} alt="Movie" className="movie-card-image" />
@@ -29,11 +30,11 @@ MovieCard.propTypes = {
   imagePath: PropTypes.string,
 };
 MovieCard.defaultProps = {
-  title: 'Movie Title 1',
-  subtitle: 'Movie Subtitle 1',
-  storyline: 'Movie Storyline 1',
-  rating: 4.5,
-  imagePath: 'images/movie_1',
+  title: 'Movie Title',
+  subtitle: 'Movie Subtitle',
+  storyline: 'Movie Storyline',
+  rating: 2.5,
+  imagePath: 'image',
 };
 
 export default MovieCard;
