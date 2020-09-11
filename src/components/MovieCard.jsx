@@ -3,16 +3,16 @@ import propTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { title } = this.props.movies;
+    const { title } = this.props.movie;
 
     return <h1>oi {title}</h1>;
   }
 }
 
-MovieCard.propTypes = {
+MovieCard.propTypes = ({
   movie: PropTypes.shape(
-    title: PropTypes.string
+    title: PropTypes.string,
   ).isRequired;
-}
+})
 
 export default MovieCard;
