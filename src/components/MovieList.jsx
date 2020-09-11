@@ -1,4 +1,5 @@
 import React from 'react';
+import movies from '../data';
 import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
@@ -11,5 +12,7 @@ class MovieList extends React.Component {
     );
   }
 }
+
+movies.propType = { }
 
 export default MovieList;
