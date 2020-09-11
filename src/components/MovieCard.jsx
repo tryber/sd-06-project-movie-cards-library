@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 class MovieCard extends React.Component {
   render() {
-    const { title } = this.props.movie;
+    const { title } = this.props.movies;
 
     return <h1>oi {title}</h1>;
   }
