@@ -6,8 +6,8 @@ class MovieList extends Component {
   render() {
     return (
       <div className="movie-list">
-        {this.props.movies.map((el) => {
-          return (
+        {this.props.movies.map((el) => 
+           (
             <MovieCard
               key={el.title}
               movie={{
@@ -18,11 +18,22 @@ class MovieList extends Component {
                 imagePath: el.imagePath,
               }}
             />
-          );
-        })}
+          )
+        )}
       </div>
     );
   }
+}
+MovieList.defaultProps = {
+  movies: [
+    {
+      title: 'title',
+      subtitle: 'subtitle',
+      storyline: 'storyline',
+      rating: 'rating',
+      imagePath: 'image',
+    }
+  ]
 }
 
 MovieList.propTypes = { movies: PropTypes.isRequired };
