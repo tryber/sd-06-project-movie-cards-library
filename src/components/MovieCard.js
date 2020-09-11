@@ -21,11 +21,13 @@ class MovieCard extends Component {
   }
 }
 
-MovieCard.propTypes = {title: PropTypes.string,
+MovieCard.propTypes = {
+  title: PropTypes.string,
   subtitle: PropTypes.string,
   storyline: PropTypes.string,
   rating: PropTypes.string,
-  imagePath: PropTypes.string,};
+  imagePath: PropTypes.string,
+};
 
 MovieCard.defaultProps = {
   title: 'title',
