@@ -9,7 +9,7 @@ class MovieList extends Component {
       <div>
         {movies.map((movie) => {
           const { title } = movie;
-          return <MovieCard key={title} movie={movie} />
+          return <MovieCard key={title} movie={movie} />;
         })}
       </div>
     );
@@ -17,7 +17,13 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.array.isRequired,
+  movies: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
+  })).isRequired,
 };
 
 export default MovieList;
