@@ -6,7 +6,7 @@ class MovieList extends Component {
   render() {
     return (
       <div className="movie-list">
-        {this.props.movies.map((el) => 
+        {this.props.movies.map((el) =>
            (
              <MovieCard
                key={el.title}
@@ -16,8 +16,8 @@ class MovieList extends Component {
                  storyline: el.storyline,
                  rating: el.rating,
                  imagePath: el.imagePath,
-              }}
-            />
+               }}
+             />
           ),
         )}
       </div>
@@ -25,7 +25,7 @@ class MovieList extends Component {
   }
 }
 MovieList.defaultProps = {
-  movie: [
+  movies: [
     {
       title: 'title',
       subtitle: 'subtitle',
