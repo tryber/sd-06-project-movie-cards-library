@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import movies from 'prop-types';
+// import movies from 'prop-types';
 
 class MovieList extends Component {
   render() {
-    const { title, subtitle, storyline, rating, imagePath } = this.props
+    const { title, subtitle, storyline, rating, imagePath } = this.props;
 
     return (
       <div>
@@ -13,7 +13,7 @@ class MovieList extends Component {
         {`Avaliação: ${rating}`}
         <img src={imagePath} alt=""></img>
       </div>
-    )
+    );
   }
 }
 // MovieList.prototype = {

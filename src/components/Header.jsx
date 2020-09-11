@@ -18,7 +18,7 @@ class Header extends Component {
               storyline={filme.storyline}
               rating={filme.rating}
               imagePath={filme.imagePath}
-            />
+            />;
           })}
         </div>
       </div>
