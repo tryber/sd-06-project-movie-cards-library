@@ -38,6 +38,13 @@ MovieCard.defaultProps = {
   },
 };
 
-MovieCard.propTypes = { movie: PropTypes.objectOf(PropTypes.string) };
+MovieCard.propTypes = { movie: PropTypes
+  .shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+  }).isRequired,
+};
 
 export default MovieCard;
