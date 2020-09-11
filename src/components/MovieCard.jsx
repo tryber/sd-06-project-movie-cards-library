@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Rating from './Rating';
 
-class MovieCard extends React.Component {
+class MovieCard extends Component {
   render() {
     return (
-      <Rating />
+      <div>
+        <Rating />
+      </div>
     );
   }
 }
