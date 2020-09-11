@@ -5,7 +5,7 @@ class Header extends Component {
     return (
       <div>
         <header>
-          <h1>Movie Cards</h1>
+          <h1>Movie Cards Library</h1>
         </header>
       </div>
     );
