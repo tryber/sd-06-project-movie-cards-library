@@ -12,6 +12,6 @@ class MovieList extends React.Component {
 
 MovieList.propTypes = { movies: PropTypes.arrayOf(Object) };
 
-MovieList.defaultProps = { name: 'Kingsglaive' };
+MovieList.defaultProps = { movies: 'Kingsglaive' };
 
 export default MovieList;
