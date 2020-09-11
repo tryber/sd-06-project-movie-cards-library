@@ -7,7 +7,7 @@ class MovieCard extends Component {
 
     return (
       <div>
-        <img src={imagePath} alt='Imagem do filme'/>
+        <img src={imagePath} alt="Imagem do filme"/>
         <br />
         {title}
         <br />
