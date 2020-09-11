@@ -15,14 +15,8 @@ class MovieCard extends Component {
   }
 }
 
-MovieCard.defaultProps = {
-  movie: {},
-  imagePath: "https://farm8.staticflickr.com/7172/6508022985_b22200ced0_z.jpg",
-};
+MovieCard.defaultProps = { movie: {} };
 
-MovieCard.propTypes = {
-  movie: PropTypes.objectOf(PropTypes.string),
-  imagePath: PropTypes.string,
-};
+MovieCard.propTypes = { movie: PropTypes.objectOf(PropTypes.string) };
 
 export default MovieCard;
