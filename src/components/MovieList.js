@@ -1,4 +1,4 @@
-import PropTypes, { object } from 'prop-types';
+import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import MovieCard from './MovieCard';
 
@@ -11,8 +11,8 @@ class MovieList extends Component {
     );
   }
 }
-MovieList.defaultProps = { movies: [] };
+MovieList.defaultProps = { movies: [{}, {}] };
 
-MovieList.propTypes = { movies: PropTypes.array };
+MovieList.propTypes = { movies: PropTypes.any };
 
 export default MovieList;
