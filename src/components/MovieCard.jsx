@@ -5,7 +5,7 @@ import '../App.css';
 
 class MovieCard extends Component {
   render() {
-    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props.movie;
+    const { movie: { title, subtitle, storyline, rating, imagePath } } = this.props;
 
     return (
       <div className="movie-card">
@@ -23,11 +23,11 @@ class MovieCard extends Component {
 
 MovieCard.propTypes = {
   movie: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string.isRequired,
-    storyline: PropTypes.string.isRequired,
-    rating: PropTypes.number.isRequired,
-    imagePath: PropTypes.string.isRequired,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.number,
+    imagePath: PropTypes.string,
   }).isRequired,
 
 };
