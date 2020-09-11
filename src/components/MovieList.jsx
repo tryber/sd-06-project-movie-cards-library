@@ -15,7 +15,7 @@ class MovieList extends Component {
             subtitle={movie.subtitle}
             synopsis={movie.storyline}
             rating={movie.rating} />
-        );
+        )
           )}
       </div>
     );
