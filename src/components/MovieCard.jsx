@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class MovieCard extends Component {
   render() {
@@ -11,5 +12,9 @@ class MovieCard extends Component {
     </div>);
   }
 }
+
+MovieCard.defaultProps = { imagePath: 'https://farm8.staticflickr.com/7172/6508022985_b22200ced0_z.jpg' };
+
+MovieCard.propTypes = { imagePath: PropTypes.string };
 
 export default MovieCard;
