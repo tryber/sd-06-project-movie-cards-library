@@ -16,7 +16,7 @@ class MovieCard extends Component {
     );
   }
 }
-
+MovieCard.defaultProps = {movie: {title:'Movie'}}
 MovieCard.propTypes = { movie: PropTypes.object.isRequired };
 
 export default MovieCard;
