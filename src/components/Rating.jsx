@@ -1,15 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 class Rating extends React.Component {
   render() {
     const { rating } = this.props
 
     return (
-      <div className='rating'>
-        <p>{rating}</p>
-      </div>
+      <p className='rating'>{rating}</p>
     )
   }
 }
 
-export default MovieCard;
+export default Rating;
