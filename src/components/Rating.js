@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class Rating extends Component {
   render() {
     return (
-      <footer className='rating'>{this.props.rating}</footer>
+      <footer className="rating">{this.props.rating}</footer>
     );
   }
 }
