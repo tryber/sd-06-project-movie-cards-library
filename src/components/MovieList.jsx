@@ -6,7 +6,7 @@ class MovieList extends Component {
   render() {
     const { movies } = this.props;
     return (
-      <div className="movielist">
+      <div className="movie-list">
         {movies.map((movie) => (
           <MovieCard
             key={movie.title}
@@ -17,6 +17,5 @@ class MovieList extends Component {
     );
   }
 }
-export default MovieList;
-
 MovieList.propTypes = { movies: PropTypes.arrayOf.isRequired };
+export default MovieList;
