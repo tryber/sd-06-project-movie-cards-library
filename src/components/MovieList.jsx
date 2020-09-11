@@ -4,7 +4,7 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
-    return movies.map((movie) => {
+    return movies.map(movie => {
       return (
         <MovieCard
           key={`${movie.title}`}
@@ -14,7 +14,7 @@ class MovieList extends Component {
           storyLine={movie.storyline}
           rating={movie.rating}
         />
-      )
+      );
     });
   }
 }
