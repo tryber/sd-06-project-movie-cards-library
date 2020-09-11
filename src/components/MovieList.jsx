@@ -9,19 +9,15 @@ class MovieList extends React.Component {
   }
 }
 
-MovieList.defaultProps = {
-  movies: [],
-};
+MovieList.defaultProps = { movies: [], };
 // aqui definimos que caso nao seja passado um array de objetos
 // ele vai ser por padrao esse array vazio
 
-MovieList.propTypes = {
-  movies: PropTypes.arrayOf(PropTypes.object),
-};
+MovieList.propTypes = { movies: PropTypes.arrayOf(PropTypes.object), };
 
 // aqui definimos PropTypes.arrayOf pois movies vai ser um array
 // e depois colocamos(PropTypes.object)pois vai ser um
-// array de objetos 
+// array de objetos
 export default MovieList;
 /* aqui exportamos o MovieList para podermos acessa-lo no App.js
 export "default" para exportar so um objeto, apenas um item.
