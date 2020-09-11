@@ -1,0 +1,9 @@
+.header {
+  align-items: center;
+  background-color: tomato;
+  color: white;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  width: 100vw;
+}
