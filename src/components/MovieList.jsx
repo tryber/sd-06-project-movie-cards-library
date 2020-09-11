@@ -10,8 +10,9 @@ class MovieList extends Component {
         image={movieTitle.imagePath}
         title={movieTitle.title}
         subtitle={movieTitle.subtitle}
-        storyline={movieTitle.storyline} />
-			)
+        storyline={movieTitle.storyline}
+				/>,
+      )
     );
   }
 }
