@@ -6,7 +6,7 @@ body {
 
 .movie-card-header {
   align-items: center;
-  background: repeating-linear-gradient(black, rgb(146, 146, 146) , white,
+  background: repeating-linear-gradient(black, rgb(146, 146, 146), white,
   rgb(145, 145, 145), black);
   display: flex;
   height: 100px;
@@ -97,24 +97,27 @@ body {
   position: absolute;
 }
 
-.cubo img:nth-child(1) {
+.cubo img:nth-child( 1 ) {
   transform: rotateY(0deg) translateZ(50px);
 }
 
-.cubo img:nth-child(2) {
+.cubo img:nth-child( 2 ) {
   transform: rotateY(90deg) translateZ(50px);
 }
 
-.cubo img:nth-child(3) {
+.cubo img:nth-child( 3 ) {
   transform: rotateY(180deg) translateZ(50px);
 }
 
-.cubo img:nth-child(4) {
+.cubo img:nth-child( 4 ) {
   transform: rotateY(-90deg) translateZ(50px);
 }
 
 @keyframes loop {
-  from { transform: rotateY(0deg); }
-  
-  to { transform: rotateY(360deg); }
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
