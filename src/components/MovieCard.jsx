@@ -15,9 +15,4 @@ MovieCard.propTypes = {
   }).isRequired;
 }
 
-MovieCard.propTypes = {
-  movie: PropTypes.shape({
-    //Todos os seus tipos aqui dentro
-  }).isRequired
-}
 export default MovieCard;
