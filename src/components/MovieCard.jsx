@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import movies from 'prop-types';
+import MovieList from './MovieList';
 
 class MovieCard extends Component {
   render() {
@@ -23,6 +24,14 @@ MovieCard.propTypes = {
   storyline: movies.string,
   rating: movies.string,
   imagePath: movies.string,
+};
+
+MovieCard.defaultProps = {
+  title: '',
+  subtitle: '',
+  storyline: '',
+  rating: '',
+  imagePath: '',
 };
 
 export default MovieCard;
