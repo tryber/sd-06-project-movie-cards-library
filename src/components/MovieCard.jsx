@@ -21,7 +21,6 @@ MovieCard.propTypes = {
   subtitle: propTypes.string.isRequired,
   storyline: propTypes.string.isRequired,
   imagePath: propTypes.string.isRequired,
-  rating: propTypes.number.isRequired,
 };
 
 export default MovieCard;
