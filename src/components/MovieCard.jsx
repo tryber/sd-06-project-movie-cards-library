@@ -1,1 +1,17 @@
-// implement MovieCard component here
+import React from 'react';
+import PropTypes from 'prop-types';
+
+class MovieCard extends React.Component {
+  render() {
+    return (
+      <div>
+      </div>
+    );
+  }
+}
+
+MovieCard.defaultProps = { key: 'Undefined' };
+
+MovieCard.propTypes = { key: PropTypes.string };
+
+export default MovieCard;

@@ -1,4 +1,5 @@
 import React from 'react';
+import movies from './data.js'
 
 import './App.css';
 // aqui importamos o css do app
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MovieList />
+      <MovieList movies={movies} />
     </div>
   );
 }
