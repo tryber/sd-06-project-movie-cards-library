@@ -1,23 +1,23 @@
-import React, { Component } from 'react'
-import movies from './data'
-import MovieCard from './MovieCard'
+import React, { Component } from 'react';
+import movies from './data';
+import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
     return (
       <div className="pokedex">
         {movies.map((movie) => {
-          return <MovieCard
+          return (<MovieCard
             key={movie.title}
             title={movie.title}
             subtitle={movie.subtitle}
             storyline={movie.storyline}
             imagePath={movie.imagePath}
-          />
+          />);
         })}
       </div>
     );
   }
 }
 
-export default MovieList
+export default MovieList;
