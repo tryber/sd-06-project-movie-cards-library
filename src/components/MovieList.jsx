@@ -14,8 +14,8 @@ class MovieList extends Component {
                  title: el.title,
                  subtitle: el.subtitle,
                  storyline: el.storyline,
-                 rating: el.rating,
                  imagePath: el.imagePath,
+                 rating: el.rating,
                }}
              />
           ),
