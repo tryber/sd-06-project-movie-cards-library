@@ -6,9 +6,9 @@ class MovieList extends React.Component {
   render() {
     return (
       <div>
-        {this.props.movies.map((movie) => <MovieCard key={movie.title} />)}
+        {this.props.movies.map((movie) => <MovieCard key={movie.title} movie={movie} />)}
       </div>
-       /* Aqui mapeamos o objeto movies para ler cada movie */
+       /* Aqui recebemos um conjunto de movies ( oarray de objetos), e para cada movie estamos criando o movieCard com cada movie.title e cada movie */
     );
   }
 }
