@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MovieList from './MovieList';
 
 class Header extends Component {
   render() {
