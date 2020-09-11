@@ -2,10 +2,10 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
-    const headerText = 'Movie Cards Library';
+    const pageTitle = 'Movie Cards Library'
     return (
       <header>
-        <h1>{headerText}</h1>
+        <h1>{pageTitle}</h1>
       </header>
     );
   }
