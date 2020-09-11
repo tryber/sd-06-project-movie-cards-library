@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import MovieCard from './MovieCard';
 import PropTypes from 'prop-types';
+import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
     return (
       <div>
-        {this.props.movies.map(element => {
+        {this.props.movies.map((element) => {
           return (<MovieCard
             movie={element}
           // imagePath={element.imagePath}
