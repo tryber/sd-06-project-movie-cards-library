@@ -14,14 +14,14 @@ class MovieCard extends Component {
         {/* <Rating /> */}
       </div>
     );
-  };
-};
+  }
+}
 
 MovieCard.propTypes = {
-  image: propTypes.string,
-  title: propTypes.string,
-  subtitle: propTypes.string,
-  storyline: propTypes.string,
-}
+  image: propTypes.string.isRequired,
+  title: propTypes.string.isRequired,
+  subtitle: propTypes.string.isRequired,
+  storyline: propTypes.string.isRequired,
+};
 
 export default MovieCard;
