@@ -2,7 +2,9 @@ import React from 'react';
 
 class Header extends React.Component {
   render() {
-    return ('Movie Cards Library');
+    return (
+    <p>{this.props.title}</p>
+    );
   }
 }
 
