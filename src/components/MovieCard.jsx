@@ -19,7 +19,13 @@ class MovieCard extends Component {
 }
 const string = PropTypes.string;
 const number = PropTypes.number;
-const obj = { title: string, subtitle: string, storyline: string, rating: number, imagePath: string };
+const obj = {
+  title: string,
+  subtitle: string,
+  storyline: string,
+  rating: number,
+  imagePath: string
+};
 MovieCard.propTypes = { movie: PropTypes.shape(obj).isRequired };
 
 export default MovieCard;
