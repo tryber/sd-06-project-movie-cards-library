@@ -6,8 +6,8 @@ class Rating extends Component {
       <small className="rating">
         {this.props.rating}
       </small>
-    )
+    );
   }
-};
+}
 
 export default Rating;

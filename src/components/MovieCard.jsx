@@ -14,6 +14,6 @@ class MovieCard extends Component {
       </div>
     );
   }
-};
+}
 
 export default MovieCard;
