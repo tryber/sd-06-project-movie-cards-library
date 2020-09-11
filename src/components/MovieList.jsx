@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MovieCard from './MovieCard';
+import propTypes from 'prop-types';
 
 class MovieList extends Component {
   render() {
