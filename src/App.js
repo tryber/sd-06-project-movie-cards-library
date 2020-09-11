@@ -1,5 +1,5 @@
 import React from 'react';
-import movies from './data.js'
+import movies from './data.js';
 
 import './App.css';
 // aqui importamos o css do app

@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 class MovieCard extends React.Component {
   render() {
     return (
-      <div>
-      </div>
+      <div />
     );
   }
 }
