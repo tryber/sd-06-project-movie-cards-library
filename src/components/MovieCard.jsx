@@ -7,14 +7,22 @@ class MovieCard extends Component {
 
     const { imagePath } = movie;
 
-    return (<div>
-      <img src={imagePath} alt="" />
-    </div>);
+    return (
+      <div>
+        <img src={imagePath} alt="" />
+      </div>
+    );
   }
 }
 
-MovieCard.defaultProps = { imagePath: 'https://farm8.staticflickr.com/7172/6508022985_b22200ced0_z.jpg' };
+MovieCard.defaultProps = {
+  movie: {},
+  imagePath: "https://farm8.staticflickr.com/7172/6508022985_b22200ced0_z.jpg",
+};
 
-MovieCard.propTypes = { imagePath: PropTypes.string };
+MovieCard.propTypes = {
+  movie: PropTypes.objectOf(PropTypes.string),
+  imagePath: PropTypes.string,
+};
 
 export default MovieCard;
