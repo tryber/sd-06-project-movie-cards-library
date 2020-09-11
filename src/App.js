@@ -1,10 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './App.css';
 import Header from './components/Header';
-// import MovieCard from './components/MovieCard';
+import MovieCard from './components/MovieCard';
 import MovieList from './components/MovieList';
 import movies from './data';
-// import Rating from './components/Rating';
 
 function App() {
   return (
@@ -14,5 +14,13 @@ function App() {
     </div>
   );
 }
+
+MovieCard.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  storyline: PropTypes.string,
+  imagePath: PropTypes.string,
+  rating: PropTypes.number
+};
 
 export default App;
