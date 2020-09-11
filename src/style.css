@@ -1,0 +1,9 @@
+.header {
+  background: repeating-linear-gradient(black , rgb(146 , 146 , 146) , white , 
+  rgb(145 , 145 , 145) , black);
+  border: 1px solid black;
+  box-shadow: 2px 2px 5px gray;
+  margin: 10px;
+  padding: 5px;
+  position: fixed top;
+}

@@ -6,7 +6,8 @@ body {
 
 .movie-card-header {
   align-items: center;
-  background-color: #343a40;
+  background: repeating-linear-gradient(black , rgb(146 , 146 , 146) , white , 
+  rgb(145 , 145 , 145) , black);
   display: flex;
   height: 100px;
   justify-content: center;
@@ -80,4 +81,40 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.cubo {
+  animation: loop 10s linear infinite;
+  float: left;
+  margin-left: 150px;
+  padding-left: 150px;  /* movimento horizontal */
+  margin-top: -60px;
+  transform-style: preserve-3d;
+  width: 60px;
+}
+
+.cubo img {
+  opacity: 0.5;
+  position: absolute;
+}
+
+.cubo img:nth-child(1) {
+  transform: rotateY(0deg) translateZ(50px);
+}
+
+.cubo img:nth-child(2) {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.cubo img:nth-child(3) {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.cubo img:nth-child(4) {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+@keyframes loop {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
 }
