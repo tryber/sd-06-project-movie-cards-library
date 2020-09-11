@@ -3,12 +3,14 @@ import React, { Component } from 'react';
 class Rating extends Component {
   render() {
     {
-      const { rating } = this.props.props;
+    const { rating } = this.props;
     return (
-      <p props={rating}></p>
-    );
-    }
+      <div>
+        <p>{rating}</p>
+      </div>
     
+    );
+    }   
   }
 }
 
