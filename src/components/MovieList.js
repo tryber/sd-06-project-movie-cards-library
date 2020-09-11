@@ -7,10 +7,10 @@ class MovieList extends React.Component {
     return (
       <div>
         <p>oi</p>
-        {movies.map(movie => <MovieCard movies={movie} />)}
+        {movies.map((movie) => <MovieCard movies={movie} />)}
       </div>
     );
-  };
+  }
 }
 
 export default MovieList;
