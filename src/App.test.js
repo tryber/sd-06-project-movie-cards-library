@@ -45,7 +45,7 @@ describe('<Header /> component', () => {
   });
 });
 
-describe.skip('<MovieList /> component', () => {
+describe('<MovieList /> component', () => {
   it('renders without crashing', () => {
     shallow(<MovieList movies={movies} />);
   });
