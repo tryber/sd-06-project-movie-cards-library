@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import movies from 'prop-types';
+import movies from 'prop-types';
 
 class MovieList extends Component {
   render() {
@@ -11,16 +11,18 @@ class MovieList extends Component {
         {`Subtítulo: ${subtitle}`}
         {`Sinopse: ${storyline}`}
         {`Avaliação: ${rating}`}
-        <img src={imagePath} alt=""></img>
+        <img src={imagePath} alt="" />
       </div>
     );
   }
 }
-// MovieList.prototype = {
-//   title: movies.string,
-//   subtitle: movies.string,
-//   storyline: movies.string,
-//   rating: movies.string,
-//   imagePath: movies.string,
-// }
+
+MovieList.prototype = {
+  title: movies.string,
+  subtitle: movies.string,
+  storyline: movies.string,
+  rating: movies.string,
+  imagePath: movies.string,
+}
+
 export default MovieList;
