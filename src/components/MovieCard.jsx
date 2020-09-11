@@ -5,10 +5,11 @@ class MovieCard extends Component {
   render() {
     const { movie } = this.props;
 
-    const { imagePath } = movie;
+    const { imagePath, title } = movie;
 
     return (
       <div>
+        <h4>{title}</h4>
         <img src={imagePath} alt="" />
       </div>
     );
