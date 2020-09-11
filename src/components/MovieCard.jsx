@@ -1,19 +1,21 @@
-import {Component} from 'react';
+import React, { Component } from 'react';
 import Rating from './Rating';
-import movies from '../data';
+
 class MovieCard extends Component {
   render() {
-    const {image} = this.props;
-    return <div>
+    const {imagem, title, subtitle, description, rating} = this.props;
+    return <div className='movie-card'>
       <div>
-        <img src={image}/>
+        <img src={imagem} className='movie-card-image'/>
       </div>
       <div>
-        <h2></h2>
-        <h3></h3>
-        <p></p>
+        <h4 className='movie-card-title'>{title}</h4>
+        <h5 className='movie-card-subtitle'>{subtitle}</h5>
+        <p className='movie-card-storyline'>{description}</p>
       </div>
-      <Rating value={movies[0].rating}/>
+      <div className='movie-card-rating'>
+        <Rating className='rating' rating={rating}/>
+      </div>
     </div>
   }
 }
