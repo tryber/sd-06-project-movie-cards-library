@@ -17,7 +17,9 @@ class MovieCard extends Component {
     );
   }
 }
-
-MovieCard.propTypes = { movie: PropTypes.shape({ title: PropTypes.string, subtitle: PropTypes.string, storyline: PropTypes.string, rating: PropTypes.number, imagePath: PropTypes.string, }).isRequired };
+const string = PropTypes.string;
+const number = PropTypes.number;
+const obj = PropTypes.shape({ title: string, subtitle: string, storyline: string, rating: number, imagePath: string, });
+MovieCard.propTypes = { movie: obj.isRequired };
 
 export default MovieCard;

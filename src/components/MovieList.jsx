@@ -16,6 +16,9 @@ class MovieList extends Component {
   }
 }
 
-MovieList.propTypes = { movies: PropTypes.arrayOf(PropTypes.shape({ title: PropTypes.string, subtitle: PropTypes.string, storyline: PropTypes.string, rating: PropTypes.number, imagePath: PropTypes.string, })).isRequired };
+const string = PropTypes.string;
+const number = PropTypes.number;
+const obj = PropTypes.shape({ title: string, subtitle: string, storyline: string, rating: number, imagePath: string, });
+MovieList.propTypes = { movies: PropTypes.arrayOf(obj).isRequired };
 
 export default MovieList;
