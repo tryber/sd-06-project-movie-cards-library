@@ -26,4 +26,4 @@ MovieCard.propTypes = {
   imagePath: PropTypes.string.isRequired,
 };
 
-export default MovieCard
+export default MovieCard;
