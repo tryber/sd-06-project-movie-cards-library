@@ -70,7 +70,7 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ![image](all-green.png)
 
-#### Dica: desativanto testes
+#### Dica: desativando testes
 
 Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
 
@@ -96,7 +96,7 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 ## Requisitos do projeto
 
-⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **CodeClimate**
+⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando pelos _checks_ do **CodeClimate**. Atenção ao **Requisito #17**: o CodeClimate verificará o uso de PropTypes. Caso elas não estejam corretamente declaradas, o CodeClimate irá falhar.
 
 #### 1 Crie um componente chamado `Header`
 
@@ -164,7 +164,7 @@ O componente `App` deve renderizar um componente `MovieList`, passando como prop
 
 #### 17 - Adicione proptypes a todos os componentes
 
-Todos os compontens que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar no Code Climate para satisfazer esse requisito.
+Todos os componentes que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar no Code Climate para satisfazer esse requisito.
 
 ---
 
