@@ -4,10 +4,14 @@ import PropTypes from 'prop-types';
 
 class MovieList extends Component {
   render() {
-    return 1;
+    return (
+        <div>
+            {this.props.movies.map((movie) => <MovieCard key={movie.title} movie={movie} />)}
+        </div>
+    );
   }
 }
 
-MovieList.PropTypes = { movies: PropTypes.array };
+MovieList.PropTypes = { movies: PropTypes.arrayarrayOf(PropTypes.object) };
 
 export default MovieList;
