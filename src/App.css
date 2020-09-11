@@ -6,8 +6,8 @@ body {
 
 .movie-card-header {
   align-items: center;
-  background: repeating-linear-gradient(black , rgb(146 , 146 , 146) , white , 
-  rgb(145 , 145 , 145) , black);
+  background: repeating-linear-gradient(black, rgb(146, 146, 146) , white,
+  rgb(145, 145, 145), black);
   display: flex;
   height: 100px;
   justify-content: center;
@@ -37,7 +37,6 @@ body {
   overflow: hidden;
   width: 300px;
 }
-
 
 .movie-card-image {
   width: 100%;
@@ -87,8 +86,8 @@ body {
   animation: loop 10s linear infinite;
   float: left;
   margin-left: 150px;
-  padding-left: 150px;  /* movimento horizontal */
   margin-top: -60px;
+  padding-left: 150px;  /* movimento horizontal */
   transform-style: preserve-3d;
   width: 60px;
 }
@@ -116,5 +115,6 @@ body {
 
 @keyframes loop {
   from { transform: rotateY(0deg); }
+  
   to { transform: rotateY(360deg); }
 }
