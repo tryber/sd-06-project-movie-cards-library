@@ -13,5 +13,6 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = { title: PropTypes.string };
+MovieCard.defaultProps = { title: null };
 
 export default MovieCard;
