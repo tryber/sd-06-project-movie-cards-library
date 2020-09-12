@@ -5,12 +5,11 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
-    return movies.map((movie) => <MovieCard movie={movie} key={movie.title} />
-    );
+    return movies.map((movie) => <MovieCard movie={movie} key={movie.title} />);
   }
 }
 
-MovieList.propType = { movie: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)) };
+MovieList.propType = { movie: PropTypes.object };
 
 MovieList.defaultProps = { movie: {} };
 
