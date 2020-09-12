@@ -4,8 +4,8 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
-    return movies.map((movie) => <MovieCard
-      key={`${movie.title}`}
+    return movies.map((movie, index) => <MovieCard
+      key={`Movie Title ${index}`}
       imagePath={movie.imagePath}
       title={movie.title}
       subtitle={movie.subtitle}

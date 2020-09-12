@@ -26,11 +26,11 @@ MovieCard.propTypes = {
 };
 
 MovieCard.defaultProps = {
-  title: 'Untitled',
-  subtitle: 'Untitled',
-  storyLine: 'No Story found',
-  imagePath: '',
-  rating: 0,
+  title: 'Movie Title 1',
+  subtitle: 'Movie Subtitle 1',
+  storyLine: 'Movie Storyline 1',
+  imagePath: 'images/movie_1',
+  rating: 4.5,
 };
 
 export default MovieCard;
