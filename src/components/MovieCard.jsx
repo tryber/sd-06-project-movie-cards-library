@@ -19,7 +19,7 @@ class MovieCard extends React.Component {
 }
 
 // PropTypes.shape({ name: PropTypes.string, age: PropTypes.number })
-Rating.propTypes = { rating: PropTypes.number };
+// Rating.propTypes = { rating: PropTypes.number };
 MovieCard.propTypes = PropTypes.objectOf(PropTypes.string);
 
 // {
