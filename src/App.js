@@ -13,4 +13,5 @@ function App() {
   );
 }
 
+MovieList.defaultProptype = { rating: 0 };
 export default App;
