@@ -1,6 +1,6 @@
 import React from 'react';
-import Rating from './Rating.jsx';
 import PropTypes from 'prop-types';
+import Rating from './Rating.jsx';
 
 class MovieCard extends React.Component {
   render() {
@@ -19,10 +19,10 @@ class MovieCard extends React.Component {
 }
 
 MovieCard.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  imagePath: PropTypes.string,
-  storyline: PropTypes.string,
+  movie.title: PropTypes.string,
+  movie.subtitle: PropTypes.string,
+  movie.imagePath: PropTypes.string,
+  movie.storyline: PropTypes.string,
 }
 
 // MovieCard.propTypes = {
