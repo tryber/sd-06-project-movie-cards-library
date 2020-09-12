@@ -42,8 +42,8 @@ body {
 }
 
 .movie-card:hover {
-  transform: perspective(200px) rotate(-10deg);
   box-shadow: inset 20px 0px 50px rgba(0, 0, 0, 1);
+  transform: perspective(200px) rotate(-10deg);
 }
 
 .movie-card-image {
