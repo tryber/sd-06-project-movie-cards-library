@@ -4,6 +4,7 @@ import Header from './components/Header';
 import MovieCard from './components/MovieCard';
 import MovieList from './components/MovieList';
 import movies from './data';
+import Types from './Types';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <MovieList movies={movies} />
       <MovieCard movies={movies} />
+      <Types />
     </section>
   );
 }
