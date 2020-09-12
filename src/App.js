@@ -10,7 +10,7 @@ function App() {
     <section className="App">
       <Header />
       <MovieList movies={movies} />
-      <MovieCard />
+      <MovieCard movies={movies} />
     </section>
   );
 }
