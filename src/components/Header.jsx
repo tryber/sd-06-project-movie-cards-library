@@ -7,7 +7,7 @@ class Header extends React.Component {
       <header>
         <h1 className="title">Movie Cards Library</h1>
       </header>
-    ); 
+    );
   }
 }
 
