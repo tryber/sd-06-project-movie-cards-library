@@ -8,18 +8,16 @@ class MovieList extends Component {
 
     return (
       <section>
-        {movies.map((movie) => {
-          return (
-            <MovieCard
-              key={movie.title}
-              title={movie.title}
-              subtitle={movie.subtitle}
-              storyline={movie.storyline}
-              rating={movie.rating}
-              imagePath={movie.imagePath}
-            />
-          );
-        })}
+        {movies.map((movie) => (
+          <MovieCard
+            key={movie.title}
+            title={movie.title}
+            subtitle={movie.subtitle}
+            storyline={movie.storyline}
+            rating={movie.rating}
+            imagePath={movie.imagePath}
+          />
+        ))}
       </section>
     );
   }
