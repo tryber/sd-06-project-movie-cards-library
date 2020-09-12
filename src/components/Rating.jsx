@@ -9,7 +9,6 @@ class Rating extends React.Component {
           {this.props.rating}
         </span>
       </div>
-      
     );
   }
 }
