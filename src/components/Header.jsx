@@ -1,13 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class Header extends React.Component {
   render() {
     return (
-      <p>{this.props.title}</p>
+      <h1>Movie Cards Library</h1>
     );
   }
 }
 
-Header.propTypes = { title: PropTypes.string };
 export default Header;
