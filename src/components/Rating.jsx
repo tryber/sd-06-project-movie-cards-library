@@ -7,9 +7,8 @@ class Rating extends Component {
     return (
       <span className="rating">{this.props.rating}</span>
     );
-   }
+  }
 }
-Rating.propTypes = {
-rating: PropTypes.number.isRequired,
-};
+Rating.propTypes = { rating: PropTypes.number.isRequired };
+
 export default Rating;
