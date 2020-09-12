@@ -8,7 +8,7 @@ class MovieCard extends React.Component {
 
     return (
       <div>
-        <img src={imagePath} alt='' />
+        <img src={imagePath} alt={title} />
         <h4>{title}</h4>
         <h5>{subtitle}</h5>
         <p>{storyline}</p>
@@ -18,7 +18,7 @@ class MovieCard extends React.Component {
   }
 }
 
-PropTypes.shape({ name: PropTypes.string, age: PropTypes.number })
+// PropTypes.shape({ name: PropTypes.string, age: PropTypes.number })
 Rating.propTypes = { rating: PropTypes.number };
 MovieCard.propTypes = PropTypes.objectOf(PropTypes.string);
 
