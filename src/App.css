@@ -19,9 +19,17 @@ body {
   text-align: center;
 }
 
+.page-title:before {
+  content: '\f03d';
+  font-family: 'Font Awesome 5 Free' , sans-serif;
+  font-weight: 900;
+  margin-right: 20px;
+}
+
 .movie-list {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding: 48px 30px;
 }
 
@@ -29,6 +37,7 @@ body {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   height: 450px;
@@ -37,14 +46,22 @@ body {
   width: 300px;
 }
 
+.movie-card:hover {
+  border: 1px solid rgb(0, 255, 234);
+}
+
 
 .movie-card-image {
+  margin-bottom: 40px;
   width: 100%;
 }
 
 .movie-card-body {
+  display: flex;
   flex: 1 1 auto;
+  flex-direction: column;
   padding: 20px;
+  position: relative;
 }
 
 .movie-card-title {
@@ -75,9 +92,14 @@ body {
 }
 
 .movie-card-rating {
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+  bottom: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  left: 0;
   padding: 12px 20px;
+  position: absolute;
+  width: 100%;
 }
