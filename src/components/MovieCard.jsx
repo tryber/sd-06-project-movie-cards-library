@@ -6,7 +6,7 @@ class MovieCard extends React.Component {
     const { title, subtitle, storyline, rating, imagePath } = this.props.eachMovie;
     return (
       <div>
-        <img src={imagePath} alt={'movie poster'} />
+        <img src={imagePath} alt={'movie poster'} />,
         <h2>{title} </h2>
         <h3>{subtitle} </h3>
         <article>{storyline} </article>
@@ -23,7 +23,7 @@ MovieCard.propTypes = {
     storyline: PropTypes.string,
     rating: PropTypes.number,
     imagePath: PropTypes.string,
-  }).isRequired, 
+  }).isRequired,
 };
 
 export default MovieCard;
