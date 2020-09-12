@@ -9,14 +9,7 @@ class MovieList extends Component {
       <div>
         {movies.map((movie, index) => {
           return (
-            <MovieCard
-              key={index}
-              title={movie.title}
-              subtitle={movie.subtitle}
-              storyline={movie.storyline}
-              rating={movie.rating}
-              imagePath={movie.imagePath}
-            />
+            <MovieCard movie={movie} />
           );
         })}
       </div>
