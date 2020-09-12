@@ -26,8 +26,8 @@ class MovieList extends Component {
 
 MovieList.propTypes = {
   movies: PropTypes.arrayOf(
-    PropTypes.shape(movieType).isRequired
-  ).isRequired
+    PropTypes.shape(movieType).isRequired,
+  ).isRequired,
 };
 
 export default MovieList;
