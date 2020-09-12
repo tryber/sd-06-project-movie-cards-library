@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
-import movies from '../data';
 import MovieCard from './MovieCard';
+import propType from 'prop-types';
 
 class MovieList extends Component {
   render() {
+
     const { movies } = this.props;
 
     return (
       <section>
-        {movies.map( (movie, index) => {
+        {movies.map((movie, index) => {
           return (
             <MovieCard
               key={index.title}
@@ -25,6 +26,12 @@ class MovieList extends Component {
   }
 }
 
-MovieList.propTypes = { movies };
+MovieList.propTypes = {
+  movies: propType.object,
+};
+
+MovieList.defaultProps = {
+  movies: '',
+};
 
 export default MovieList;
