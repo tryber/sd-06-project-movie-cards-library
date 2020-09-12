@@ -3,11 +3,11 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class Rating extends Component {
-render() {
+  render() {
     return (
-        <span className="rating">{this.props.rating}</span>
+      <span className="rating">{this.props.rating}</span>
     );
-    }
+   }
 }
 Rating.propTypes = {
 rating: PropTypes.number.isRequired,
