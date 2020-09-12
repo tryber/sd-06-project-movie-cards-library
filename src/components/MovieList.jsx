@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
 
 class MovieList extends Component {
-
   render() {
-
     const { movies } = this.props;
 
     return (
@@ -28,13 +26,7 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
-  movies: PropTypes.shape({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.string,
-    imagePath: PropTypes.string,
-  })
+  movies: PropTypes.array.isRequired
 };
 
 export default MovieList;
