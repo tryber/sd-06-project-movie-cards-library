@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import movieType from '../Types';
 import Rating from './Rating';
-// import movie from './MovieList'
 
 class MovieCard extends Component {
   render() {
