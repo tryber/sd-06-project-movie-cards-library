@@ -17,11 +17,9 @@ class MovieCard extends React.Component {
 					<Rating rating={rating} />
 				</div>
 			</div>
-		);
+    );
 	}   
 }
-
-MovieCard.defaulProps = { movie: {} };
 
 MovieCard.propTypes = {
 	movie: PropTypes.shape({
