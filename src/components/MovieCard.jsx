@@ -18,7 +18,7 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.object,
+  movie: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.number])),
   title: PropTypes.string,
   subtitle: PropTypes.string,
   storyline: PropTypes.string,
