@@ -25,7 +25,7 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
-  movie: PropTypes.arrayOf.isRequired,
+  movie: PropTypes.array.isRequired,
   imagePath: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
