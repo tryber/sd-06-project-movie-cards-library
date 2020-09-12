@@ -23,6 +23,13 @@ class MovieList extends Component {
   }
 }
 
-MovieList.propTypes = { movies: PropTypes.instanceOf(Array).isRequired };
+//MovieList.propTypes = { movies: PropTypes.instanceOf(Array).isRequired };
+MovieList.propTypes = { movies: PropTypes.shape({
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  storyline: PropTypes.string,
+  rating: PropTypes.string,
+  imagePath: PropTypes.string
+}).isRequired };
 
 export default MovieList;

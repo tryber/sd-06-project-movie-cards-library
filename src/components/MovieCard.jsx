@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import movies from 'prop-types';
+import { movie } from '../types';
 
 class MovieCard extends Component {
   render() {
@@ -17,20 +17,6 @@ class MovieCard extends Component {
   }
 }
 
-MovieCard.propTypes = {
-  title: movies.string,
-  subtitle: movies.string,
-  storyline: movies.string,
-  rating: movies.string,
-  imagePath: movies.string,
-};
-
-MovieCard.defaultProps = {
-  title: '',
-  subtitle: '',
-  storyline: '',
-  rating: '',
-  imagePath: '',
-};
+MovieCard.propTypes = movie;
 
 export default MovieCard;
