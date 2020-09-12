@@ -6,13 +6,13 @@ class MovieCard extends Component {
     const { title, subtitle, storyline, rating, imagePath } = this.props;
 
     return (
-      <section className="movie-card">
+      <div className="movie-card">
         <img src={imagePath} alt={title} />
         <h4 className="movie-card-title">{title}</h4>
         <h5>{`Subtítulo: ${subtitle}`}</h5>
         <p>{`Sinopse: ${storyline}`}</p>
         {`Avaliação: ${rating}`}
-      </section>
+      </div>
     );
   }
 }
