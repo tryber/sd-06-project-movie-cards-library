@@ -20,7 +20,7 @@ class MovieCard extends Component {
 MovieCard.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string,
-  storyLine: PropTypes.string,
+  storyline: PropTypes.string,
   imagePath: PropTypes.string,
   rating: PropTypes.number,
 };
@@ -28,7 +28,7 @@ MovieCard.propTypes = {
 MovieCard.defaultProps = {
   title: 'Movie Title 1',
   subtitle: 'Movie Subtitle 1',
-  storyLine: 'Movie Storyline 1',
+  storyline: 'Movie Storyline 1',
   imagePath: 'images/movie_1',
   rating: 4.5,
 };
