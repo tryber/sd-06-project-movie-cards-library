@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import MovieCard from './MovieCard';
-import propType from 'prop-types';
 
 class MovieList extends Component {
+
   render() {
 
     const { movies } = this.props;
@@ -27,11 +28,13 @@ class MovieList extends Component {
 }
 
 MovieList.propTypes = {
-  movies: propType.object,
-};
-
-MovieList.defaultProps = {
-  movies: '',
+  movies: PropTypes.shape({
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    storyline: PropTypes.string,
+    rating: PropTypes.string,
+    imagePath: PropTypes.string,
+  })
 };
 
 export default MovieList;
