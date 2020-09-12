@@ -7,6 +7,7 @@ body {
 .movie-card-header {
   align-items: center;
   background: repeating-linear-gradient(black, gray, white, gray, black);
+  border: 6px groove gray;
   display: flex;
   height: 100px;
   justify-content: center;
@@ -86,7 +87,6 @@ body {
   float: left;
   margin-left: 150px;
   margin-top: -60px;
-  padding-left: 150px;  /* movimento horizontal */
   transform-style: preserve-3d;
   width: 60px;
 }
