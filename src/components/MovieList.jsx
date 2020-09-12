@@ -13,8 +13,8 @@ class MovieList extends Component {
           <MovieCard
             key={movie.title}
             movie={movie}
-          />
-        ))}
+          />);
+        )}
 			// eslint-disable-next-line no-tabs
       </section>
     );
