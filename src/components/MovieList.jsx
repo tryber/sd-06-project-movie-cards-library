@@ -6,12 +6,12 @@ class MovieList extends Component {
   render() {
     const movies = this.props.movies;
     const movieList = movies.map((movie) => <MovieCard movie={movie} key={movie.title} />);
-      return (
-        <ul>
-          {movieList}
-        </ul>
-      );
-  };
+    return (
+      <ul>
+        {movieList}
+      </ul>
+    );
+  }
 }
 
 MovieList.propType = { movies: PropTypes.arrayOf(PropTypes.objectOf(PropTypes.string)) };
