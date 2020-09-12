@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
-import movie from '../types';
+import movieType from '../types';
 
 class MovieCard extends Component {
   render() {
     const { title, subtitle, storyline, rating, imagePath } = this.props;
 
     return (
-      <section>
+      <section className="movie-card">
+        <img src={imagePath} alt={title} />
         {`Título: ${title}`}
         {`Subtítulo: ${subtitle}`}
         {`Sinopse: ${storyline}`}
         {`Avaliação: ${rating}`}
-        <img src={imagePath} alt="" />
       </section>
     );
   }
 }
 
-MovieCard.propTypes = movie;
+MovieCard.propTypes = movieType;
 
 export default MovieCard;
