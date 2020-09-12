@@ -1,13 +1,17 @@
 import React from 'react';
+import Header from './components/Header';
 import './App.css';
+import MovieList from './components/MovieList';
+import movies from './data';
 
 function App() {
   return (
     <div className="App">
-      {/* Sua implementação deve ficar aqui. Remova essas duas linhas e mão na massa */}
-      Hora de codar! 🚀✍️👨‍💻👩‍💻💪
+      <Header />
+      <MovieList movies={movies} />
     </div>
   );
 }
 
+MovieList.defaultProptype = { rating: 0 };
 export default App;
