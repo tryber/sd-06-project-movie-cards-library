@@ -58,8 +58,8 @@ body {
 
 .movie-card-body {
   display: flex;
-  flex-direction: column;
   flex: 1 1 auto;
+  flex-direction: column;
   padding: 20px;
   position: relative;
 }
