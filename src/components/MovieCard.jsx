@@ -29,11 +29,9 @@ export const props = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
-    imagePage: PropTypes.string,
+    imagePath: PropTypes.string,
     rating: PropTypes.number,
-  }),
+  }).isRequired,
 };
-
-MovieCard.defaultProps = props;
 
 MovieCard.propTypes = props;
