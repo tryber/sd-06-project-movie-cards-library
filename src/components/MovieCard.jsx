@@ -18,7 +18,7 @@ class MovieCard extends React.Component {
 				</div>
 			</div>
 		);
-  }
+	}   
 }
 
 MovieCard.defaulProps = { movie: {} };
