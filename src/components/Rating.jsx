@@ -4,9 +4,12 @@ import PropTypes from 'prop-types';
 class Rating extends React.Component {
   render() {
     return (
-      <span className="rating">
-        {this.props.rating}
-      </span>
+      <div className="movie-card-rating">
+        <span className="rating">
+          {this.props.rating}
+        </span>
+      </div>
+      
     );
   }
 }
