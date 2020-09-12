@@ -21,7 +21,7 @@ body {
 
 .page-title:before {
   content: '\f03d';
-  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-family: 'Font Awesome 5 Free' , sans-serif;
   font-weight: 900;
   margin-right: 20px;
 }
@@ -29,21 +29,21 @@ body {
 .movie-list {
   display: flex;
   flex-flow: row wrap;
-  padding: 48px 30px;
   justify-content: center;
+  padding: 48px 30px;
 }
 
 .movie-card {
   background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   height: 450px;
   margin: 5px;
   overflow: hidden;
   width: 300px;
-  cursor: pointer;
 }
 
 .movie-card:hover {
@@ -52,15 +52,15 @@ body {
 
 
 .movie-card-image {
-  width: 100%;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .movie-card-body {
-  flex: 1 1 auto;
-  padding: 20px;
   display: flex;
   flex-direction: column;
+  flex: 1 1 auto;
+  padding: 20px;
   position: relative;
 }
 
@@ -92,14 +92,14 @@ body {
 }
 
 .movie-card-rating {
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+  bottom: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  left: 0;
   padding: 12px 20px;
   position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }

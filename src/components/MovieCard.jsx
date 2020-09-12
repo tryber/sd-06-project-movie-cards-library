@@ -25,13 +25,11 @@ class MovieCard extends React.Component {
 export default MovieCard;
 
 export const props = {
-  movie: PropTypes.exact({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    imagePath: PropTypes.string,
-    rating: PropTypes.number,
-  }).isRequired,
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  storyline: PropTypes.string,
+  imagePath: PropTypes.string,
+  rating: PropTypes.number,
 };
 
-MovieCard.propTypes = props;
+MovieCard.propTypes = { movie: PropTypes.exact(props).isRequired };
