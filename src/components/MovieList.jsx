@@ -8,7 +8,7 @@ class MovieList extends Component {
 
     return (
       <section>
-        {movies.map(movie => {
+        {movies.map((movie) => {
           return (
             <MovieCard
               key={movie.title}
@@ -25,6 +25,6 @@ class MovieList extends Component {
   }
 }
 
-MovieList.propTypes = { movies: PropTypes.array.isRequired };
+MovieList.propTypes = { movies: PropTypes.instanceOf(Array).isRequired };
 
 export default MovieList;
