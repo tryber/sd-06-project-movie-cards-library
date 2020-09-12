@@ -10,7 +10,5 @@ class Rating extends React.Component {
     );
   }
 }
-
-Rating.propTypes = { rating: PropTypes.number.isRequerid };
-
+Rating.propTypes = { rating: PropTypes.number.isRequired };
 export default Rating;
