@@ -18,6 +18,7 @@ class MovieCard extends Component {
 }
 
 MovieCard.propTypes = {
+  movie: PropTypes.object,
   title: PropTypes.string,
   subtitle: PropTypes.string,
   storyline: PropTypes.string,
@@ -26,6 +27,7 @@ MovieCard.propTypes = {
 };
 
 MovieCard.defaultProps = {
+  movie: {},
   title: 'Movie Title 1',
   subtitle: 'Movie Subtitle 1',
   storyline: 'Movie Storyline 1',
