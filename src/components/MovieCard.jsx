@@ -13,7 +13,7 @@ class MovieCard extends React.Component {
           <h4 className="title">{ title }</h4>
           <h5 className="subtitle">{ subtitle }</h5>
           <p className="story">{ story }</p>
-          <Rating rating={ rating }/>
+          <Rating rating={rating} />
         </div>
       </div>
     );
@@ -22,18 +22,5 @@ class MovieCard extends React.Component {
 
 export default MovieCard;
 
-MovieCard.propsType = {
-  movie: PropTypes.exact({
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    storyline: PropTypes.string,
-    rating: PropTypes.number,
-    imagePath:  PropTypes.string,
-  }),
-  movie: PropTypes.object,
-  movie.title: PropTypes.string,
-  movie.subtitle: PropTypes.string,
-  movie.storyline: PropTypes.string,
-  movie.rating: PropTypes.number,
-  movie.imagePath: PropTypes.string,
-};
+MovieCard.defaultProps = { movie: {} };
+MovieCard.propTypes = { movie: PropTypes.objectOf(PropTypes.string) };
