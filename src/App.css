@@ -1,14 +1,9 @@
-html {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: whitesmoke;
   box-sizing: border-box;
   font-size: 16px;
   margin: 0;
+  padding: 0;
 }
 
 .movie-card-header {
@@ -43,7 +38,6 @@ body {
   overflow: hidden;
   width: 300px;
 }
-
 
 .movie-card-image {
   width: 100%;
@@ -90,7 +84,11 @@ body {
 }
 
 .header {
+  align-items: center;
   background-color: #6c757d;
-  line-height: 2em;
-  text-align: center;
+  color: white;
+  display: flex;
+  font-weight: 700;
+  height: 4em;
+  justify-content: center;
 }
