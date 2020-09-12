@@ -19,12 +19,12 @@ class MovieCard extends Component {
 }
 MovieCard.propTypes = {
   movie: PropTypes.exact({
-     title: PropTypes.string.isRequired,
-     subtitle: PropTypes.string.isRequired,
-     storyline: PropTypes.string.isRequired,
-     imagePath: PropTypes.string.isRequired,
-     rating: PropTypes.number.isRequired,
-   }).isRequired,
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string.isRequired,
+    storyline: PropTypes.string.isRequired,
+    imagePath: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired,
+    }).isRequired,
 };
 
 export default MovieCard;
