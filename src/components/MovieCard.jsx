@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 
 class MovieCard extends Component {
   render() {
@@ -14,6 +15,12 @@ class MovieCard extends Component {
       </div>
     );
   }
+}
+
+MovieCard.propTypes = {
+  title: propTypes.string,
+  subtitle: propTypes.string,
+  imagePath: propTypes.string,
 }
 
 export default MovieCard;
