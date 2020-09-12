@@ -4,6 +4,10 @@ body {
   font-size: 16px;
 }
 
+li {
+  list-style: none;
+}
+
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
@@ -37,7 +41,6 @@ body {
   width: 300px;
 }
 
-
 .movie-card-image {
   width: 100%;
 }
@@ -62,6 +65,7 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
+  max-height: 76px;
   text-align: justify;
 }
 
@@ -79,5 +83,5 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   display: flex;
   justify-content: flex-end;
-  padding: 12px 20px;
+  padding : 5px;
 }
