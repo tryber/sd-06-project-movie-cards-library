@@ -64,7 +64,7 @@ li {
 }
 
 .movie-card-storyline {
-  text-align: justify;
+  font-size: 14px;     
   max-height: 76px;
   text-align: justify;
 }
