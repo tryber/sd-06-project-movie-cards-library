@@ -1,0 +1,10 @@
+.rating-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rating {
+  background-color: blue;
+  text-align: center;
+  width: 10%;
+}
