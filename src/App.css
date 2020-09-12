@@ -42,7 +42,7 @@ body {
 }
 
 .movie-card:hover {
-  box-shadow: inset 20px 0px 50px rgba(0, 0, 0, 1);
+  box-shadow: inset 20px 0 50px rgba(2, 2, 0, 1);
   transform: perspective(200px) rotate(-10deg);
 }
 
@@ -84,8 +84,8 @@ body {
 }
 
 .movie-card-rating {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(2, 2, 0, 0.03);
+  border-top: 1px solid rgba(2, 2, 0, 0.125);
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
