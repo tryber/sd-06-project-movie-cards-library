@@ -6,10 +6,16 @@ class MovieList extends Component {
   render() {
     return (
       <div className="movie-list">
-       !!!!!!
+        <p> 
+          { this.props.movies.map((movie) =>
+          <MovieCard key={movie.title} movie={movie} />)} 
+        </p>
       </div>
     );
   }
 }
+
+
+MovieList.PropTypes = { movies: PropTypes.string.isRequired};
 
 export default MovieList;
