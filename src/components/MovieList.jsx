@@ -15,10 +15,6 @@ class MovieList extends React.Component {
   }
 }
 
-MovieList.propTypes = {
-  movies: PropTypes.shape(
-
-  )
-}
+MovieList.propTypes = {movies: PropTypes.array};
 
 export default MovieList;
