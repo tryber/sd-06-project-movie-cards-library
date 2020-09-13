@@ -33,7 +33,7 @@ body {
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  height: 450px;
+  height: 500px;
   margin: 5px;
   overflow: hidden;
   width: 300px;
@@ -63,6 +63,7 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
+  padding: 5px;
   text-align: justify;
 }
 
