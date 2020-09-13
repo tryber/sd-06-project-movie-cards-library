@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import MovieList from './components/MovieList';
-//import data from './data';
+// import data from './data';
 import Header from './components/Header';
 // import MovieCard from './components/MovieCard'
 // import MovieList from './components/MovieList';
@@ -10,7 +10,7 @@ import Header from './components/Header';
 function App() {
   return (
     <div className="App">
-      <MovieList/><Header/>
+      (<MovieList/><Header/>)
 
     </div>
   );
