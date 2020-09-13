@@ -14,7 +14,7 @@ class MovieList extends Component {
   }
 }
 
-MovieList.deafultProps = { movies: [{}] };
+MovieList.deafultProps = { movies: PropTypes.arrayOf(PropTypes.object) };
 
 MovieList.propTypes = { movies: PropTypes.shape([]) };
 
