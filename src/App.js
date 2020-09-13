@@ -1,8 +1,10 @@
 import React from 'react';
 import './App.css';
 
-// Para importar meu componente HEADER
 import Header from './components/Header';
+import MovieList from './components/MovieList';
+import movies from './data';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
     // para serem todos "juntados" em um só arquivo
     <div className="App">
       <Header />
+      <MovieList movies={movies}/>
     </div>
   );
 }
