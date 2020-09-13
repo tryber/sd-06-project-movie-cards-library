@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 
@@ -46,6 +47,7 @@ describe('<Header /> component', () => {
 });
 
 describe('<MovieList /> component', () => {
+  // eslint-disable-next-line no-undef
   it('renders without crashing', () => {
     shallow(<MovieList movies={movies} />);
   });
