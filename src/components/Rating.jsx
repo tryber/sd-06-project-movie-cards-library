@@ -8,9 +8,7 @@ class Rating extends Component {
     const styleDiv = { width: ratingWidth };
     return (
       <div className="rating">
-        (
         {rating}
-        )
         <div className="stars-group">
           <div className="five-stars-gold" style={styleDiv} />
           <div className="five-stars-silver" />
