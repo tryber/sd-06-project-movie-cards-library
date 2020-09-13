@@ -24,6 +24,8 @@ class MovieCard extends Component {
   }
 }
 
+MovieCard.defaultProps = { movie: {} };
+
 MovieCard.propTypes = {
   movie: {
     title: PropTypes.string,
