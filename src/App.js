@@ -12,7 +12,7 @@ function App() {
     // para serem todos "juntados" em um só arquivo
     <div className="App">
       <Header />
-      <MovieList movies={movies}/>
+      <MovieList movies={movies} />
     </div>
   );
 }
