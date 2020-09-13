@@ -9,9 +9,7 @@ class MovieList extends Component {
       movies.map((movie) =>
         <MovieCard
           key={movie.title}
-          title={movie.title}
-          subtitle={movie.subtitle}
-          imagePath={movie.imagePath}
+          movie={movie}
         />)
     );
   }
