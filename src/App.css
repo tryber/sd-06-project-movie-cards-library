@@ -1,83 +1,107 @@
 body {
-  background-color: whitesmoke;
+  background: linear-gradient(180deg, #260f45 25%, #45bbd5 56%, #e1dae7 69%);
   box-sizing: border-box;
   font-size: 16px;
 }
 
-.movie-card-header {
-  align-items: center;
-  background-color: #343a40;
-  display: flex;
-  height: 100px;
-  justify-content: center;
+.rating {
+  color: #5c5c5c;
+  font-size: 14px;
+  padding: 3px 9px;
+  text-align: left;
 }
 
-.page-title {
-  color: #f8f9fa;
-  font-size: 28px;
-  font-weight: 500;
+.stars {
+  margin-left: 5px;
+}
+
+header {
+  background: url('/images/bg-site.jpg') repeat-x center; /* Free License - freepik.com */
+  color: white;
+  font-size: 1.5em;
+  height: 250px;
+  padding-top: 40px;
   text-align: center;
-}
-
-.movie-list {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 48px 30px;
-}
-
-.movie-card {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 3px;
-  display: flex;
-  flex-direction: column;
-  height: 450px;
-  margin: 5px;
-  overflow: hidden;
-  width: 300px;
-}
-
-
-.movie-card-image {
   width: 100%;
 }
 
-.movie-card-body {
-  flex: 1 1 auto;
-  padding: 20px;
-}
-
-.movie-card-title {
-  font-size: 24px;
-  font-weight: 500;
-  margin: 0 0 12px;
-}
-
-.movie-card-subtitle {
-  color: #6c757d;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 0 0 8px;
-}
-
-.movie-card-storyline {
-  font-size: 14px;
-  text-align: justify;
-}
-
-.rating {
-  background-color: #007bff;
-  border-radius: 25px;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 3px 9px;
-}
-
-.movie-card-rating {
-  background-color: rgba(0, 0, 0, 0.03);
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+.movielist {
+  background-color: white;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
   display: flex;
-  justify-content: flex-end;
-  padding: 12px 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  margin-top: -70px;
+  padding: 30px;
+}
+
+.colored-border {
+  background: linear-gradient(180deg, #260f45 16%, #45bbd5 54%, #dfabf4 100%);
+  border-radius: 8px;
+  height: 370px;
+  margin-bottom: 20px;
+  min-width: 200px;
+  padding: 2px;
+  width: 23%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.cover-images {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 100%;
+}
+
+.text-card {
+  padding: 10px;
+}
+
+.title {
+  color: #350b57;
+  font-size: 20px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #735b86;
+  font-size: 15px;
+  margin: 2px 0;
+}
+
+.text {
+  color: #5c5a5e;
+  font-size: 14px;
+  line-height: 1.3em;
+  margin-top: 15px;
+}
+
+.stars-group {
+  position: relative;
+}
+
+.five-stars-gold {
+  background: url('/images/stars_gold.png') no-repeat top left;
+  height: 15px;
+  left: 35px;
+  position: absolute;
+  top: -16px;
+  width: 80px;
+  z-index: 3;
+}
+
+.five-stars-silver {
+  background: url('/images/stars_silver.png') no-repeat top left;
+  height: 15px;
+  left: 35px;
+  position: absolute;
+  top: -16px;
+  width: 80px;
+  z-index: 2;
 }
