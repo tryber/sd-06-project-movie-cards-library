@@ -1,9 +1,9 @@
 body {
-  background-color: whitesmoke;
+  background: linear-gradient(180deg, rgba(38,15,69,1) 25%, rgba(69,187,213,1) 56%, rgba(225,218,231,1) 69%);
   box-sizing: border-box;
   font-size: 16px;
 }
-
+/* 
 .movie-card-header {
   align-items: center;
   background-color: #343a40;
@@ -63,16 +63,7 @@ body {
 .movie-card-storyline {
   font-size: 14px;
   text-align: justify;
-}
-
-.rating {
-  background-color: #007bff;
-  border-radius: 25px;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 3px 9px;
-}
+} 
 
 .movie-card-rating {
   background-color: rgba(0, 0, 0, 0.03);
@@ -80,4 +71,54 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}*/
+
+.rating {
+  text-align: right;
+  color: #06BBC4;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 3px 9px;
+}
+
+header {
+  background: url("/images/bg-site.jpg") repeat-x center; /* Free License - freepik.com */
+  color: white;
+  font-size: 1.5em;
+  height: 250px;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.movielist {
+  background-color: white;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  margin: 20px;
+  margin-top: -70px;
+}
+
+.card {
+  border: 2px solid;
+  border-image-source: linear-gradient(180deg, rgba(38,15,69,1) 16%, rgba(69,187,213,1) 54%, rgba(204,114,237,0.6432948179271709) 100%);
+  border-image-slice: 1;
+  border-radius: 10rem;
+  border-radius: inherit;
+  width: 23%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.cover-images {
+  width: 100%;
+}
+
+.text-card {
+  height: 220px;
+  padding: 10px;
 }

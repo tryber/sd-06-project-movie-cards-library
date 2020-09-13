@@ -9,9 +9,11 @@ class MovieCard extends Component {
     return (
       <div className="card">
         <img src={imagePath} alt={title} className="cover-images" />
-        <h4>{title}</h4>
-        <h5>{subtitle}</h5>
-        <p>{storyline}</p>
+        <div className="text-card">
+          <h4 className="title">{title}</h4>
+          <h5>{subtitle}</h5>
+          <p>{storyline}</p>
+        </div>
         <Rating rating={rating} />
       </div>
     );
