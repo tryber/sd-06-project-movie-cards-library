@@ -5,13 +5,16 @@ import MovieCard from './MovieCard';
 class MovieList extends Component {
   render() {
     return (<div className="movie-list">
-      <MovieCard
-        title={movies[0].title}
-        subtitle={movies[0].subtitle}
-        storyline={movies[0].storyline}
-        imagePath={movies[0].imagePath}
-        rating={movies[0].rating}
-      />
+      {movies.map((movie) =>
+        <MovieCard
+          key={movie.title}
+          title={movie.title}
+          subtitle={movie.subtitle}
+          storyline={movie.storyline}
+          imagePath={movie.imagePath}
+          rating={movie.rating}
+        />,
+      )}
     </div>
     );
   }
