@@ -2,6 +2,8 @@ body {
   background-color: whitesmoke;
   box-sizing: border-box;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .movie-card-header {
@@ -27,16 +29,15 @@ body {
 
 .movie-card {
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 5px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  height: 450px;
-  margin: 5px;
+  height: 500px;
+  margin: 29px;
   overflow: hidden;
   width: 300px;
 }
-
 
 .movie-card-image {
   width: 100%;
@@ -62,6 +63,7 @@ body {
 
 .movie-card-storyline {
   font-size: 14px;
+  padding: 5px;
   text-align: justify;
 }
 
@@ -80,4 +82,20 @@ body {
   display: flex;
   justify-content: flex-end;
   padding: 12px 20px;
+}
+
+.header {
+  align-items: center;
+  background-color: #565656;
+  color: white;
+  display: flex;
+  font-weight: 700;
+  height: 4em;
+  justify-content: center;
+}
+
+.label {
+  color: #343a40;
+  font-weight: 700;
+  margin: auto;
 }
