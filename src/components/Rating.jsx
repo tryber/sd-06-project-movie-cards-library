@@ -1,12 +1,15 @@
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import React from 'react';
+// import React from 'react';
 import '../App.css';
 
-class Rating extends React.Component {
+class Rating extends Component {
   render() {
+    const { rating } = this.props;
+
     return (
       <div className="rating">
-        {this.props.rating}
+        { rating }
       </div>
     );
   }
