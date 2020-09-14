@@ -3,7 +3,6 @@ import './App.css';
 import Header from './components/Header';
 import MovieList from './components/MovieList';
 import movies from './data.js';
-import MovieCard from './components/MovieCard';
 
 class App extends React.Component {
   render() {
@@ -11,7 +10,6 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <MovieList movies={movies} />
-        <MovieCard movies={movies} />
       </div>
     );
   }
