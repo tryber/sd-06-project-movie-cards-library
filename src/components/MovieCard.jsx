@@ -1,10 +1,26 @@
 import React from 'react';
 
-import movies from '../data';
+import Rating from './Rating';
 
 class MovieCard extends React.Component {
   render() {
-    return <h1>{movies[0].title}</h1>;
+    const { movie } = this.props;
+    const {imagePath, title, subtitle, storyline, rating} = movie;
+
+    return <div>
+              <div>
+                <img src={imagePath} alt={'movie-' + title + '-image'}/>
+              </div>
+              <div>
+                <h4>{title}</h4>
+                <h5>{subtitle}</h5>
+                <p>{storyline}</p>
+              <div>
+                <span>Rating</span>
+                <span><Rating rating={rating} /></span>
+              </div>
+              </div>
+            </div>;
   }
 }
 

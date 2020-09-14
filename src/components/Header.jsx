@@ -1,13 +1,10 @@
 import React from 'react';
 
-import MovieCard from './MovieCard';
-
 class Header extends React.Component {
   render() {
     return (
       <header>
         <h1>Movie Cards Library</h1>
-        <MovieCard />
       </header>);
   }
 }
