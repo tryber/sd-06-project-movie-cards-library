@@ -10,16 +10,16 @@ class MovieCard extends React.Component {
 
     return (<div>
       <div>
-        <img src={ imagePath } alt={ `movie-${ title }` }/>
+        <img src={imagePath} alt={`movie-${title}`}/>
       </div>
       <div>
-        <h4>{ title  }</h4>
-        <h5>{ subtitle }</h5>
-        <p>{ storyline }</p>
-      <div>
-        <span>Rating</span>
-        <span><Rating rating={ rating } /></span>
-      </div>
+        <h4>{title}</h4>
+        <h5>{subtitle}</h5>
+        <p>{storyline}</p>
+        <div>
+          <span>Rating</span>
+          <span><Rating rating={rating} /></span>
+        </div>
       </div>
     </div>);
   }
@@ -32,6 +32,6 @@ MovieCard.propTypes = {
     imagePath: PropTypes.string,
     title: PropTypes.string,
     subtitle: PropTypes.string,
-    storyline: PropTypes.string
-  })
-}
+    storyline: PropTypes.string,
+  }),
+};
