@@ -10,7 +10,7 @@ const movies = [
     title: 'Final Fantasy',
     subtitle: 'Spirits Within',
     storyline: 'A scientist makes a last stand on Earth with the help of a ragtag team of soldiers against an invasion of alien phantoms.',
-    rating: 4.5,
+    rating: 'kkk',
     imagePath: 'images/Final_Fantasy_Spirits_Within.jpg',
   },
   {
