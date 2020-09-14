@@ -29,12 +29,12 @@ body {
 
 .movie-card {
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 5px solid rgba(0, 0, 0, 0.125);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
   height: 500px;
-  margin: 5px;
+  margin: 29px;
   overflow: hidden;
   width: 300px;
 }
@@ -92,4 +92,10 @@ body {
   font-weight: 700;
   height: 4em;
   justify-content: center;
+}
+
+.label {
+  color: #343a40;
+  font-weight: 700;
+  margin: auto;
 }
