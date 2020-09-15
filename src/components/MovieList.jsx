@@ -6,7 +6,7 @@ class MovieList extends Component {
   render() {
     const movies = this.props.movies;
     return (
-      <div>
+      <div className="movie-list">
         {movies.map((element) =>
           <MovieCard key={element.title} movie={element} />)}
       </div>

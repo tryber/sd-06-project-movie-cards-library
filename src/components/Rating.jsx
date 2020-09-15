@@ -5,7 +5,7 @@ export default class Rating extends Component {
   render() {
     const moviesRating = this.props.rating;
     return (
-      <div>
+      <div className="movie-card-rating">
         <p className="rating">{moviesRating}</p>
       </div>
     );
