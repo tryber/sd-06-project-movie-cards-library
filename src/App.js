@@ -14,3 +14,16 @@ function App() {
 }
 
 export default App;
+
+// REFERENCIAS
+// https://pt-br.reactjs.org/
+// https://app.rocketseat.com.br/
+// https://scrimba.com/
+// https://stackoverflow.com/
+
+// GITHUB = ANDERSONS STUBER, PAULO LINS
+// https://github.com/HugoDF/jest-spy-mock-stub-reference
+
+// YOUTUBE = "TANTAUM" DE CANAL
+
+// AGRADECIMENTOS ESPECIAIS: AND E PAULO LINS.
