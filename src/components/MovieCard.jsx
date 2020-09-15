@@ -4,7 +4,7 @@ import Rating from './Rating';
 
 class MovieCard extends Component {
   render() {
-    const { title, subtitle, storyline, imagePath, rating } = this.props;
+    const { title, subtitle, storyline, imagePath, rating } = this.props.movie;
     return (
       <div className="movie-card">
         <img className="movie-card-image" src={imagePath} alt="imagem do filme" />
@@ -19,6 +19,7 @@ class MovieCard extends Component {
   }
 }
 MovieCard.propTypes = {
+  movie: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string,
   subtitle: PropTypes.string,
   storyline: PropTypes.string,
@@ -26,6 +27,7 @@ MovieCard.propTypes = {
   rating: PropTypes.number,
 };
 MovieCard.defaultProps = {
+  movie: [],
   title: '',
   subtitle: '',
   storyline: '',
@@ -36,6 +38,5 @@ MovieCard.defaultProps = {
 // (propType [name] is not required, but has no corresponding defaultProp declaration.)
 // encontrada no StackOverflow:
 // [https://stackoverflow.com/questions/52332394/if-a-proptype-isnt-required-why-eslint-want-to-provide-default-prop-for-it]
-
 
 export default MovieCard;
