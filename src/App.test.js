@@ -114,7 +114,7 @@ describe('<MovieCard /> component', () => {
 
 describe('<Rating /> component', () => {
   it('renders without crashing', () => {
-    shallow(<Rating />);
+    shallow(<Rating rating={1}/>);
   });
 
   it('renders the rating inside an element with the class `rating`', () => {
