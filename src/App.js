@@ -9,5 +9,6 @@ function App() {
     </div>
   );
 }
+const a = 0
 
 export default App;
