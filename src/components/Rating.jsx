@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 class Rating extends Component {
   render() {
     return (
-      <div>
-        <p className="rating">{this.props.rating}</p>
+      <div className="movie-card-rating">
+        <div className="rating">{this.props.rating}</div>
       </div>
     );
   }
