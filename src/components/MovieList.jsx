@@ -14,6 +14,6 @@ class MovieList extends Component {
   }
 }
 
-MovieList.propTypes = { movies: PropTypes.object };
+MovieList.propTypes = { movies: PropTypes.shape({ title: PropTypes.string }).isRequired };
 
 export default MovieList;
