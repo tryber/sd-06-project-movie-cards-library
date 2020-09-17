@@ -6,9 +6,9 @@ import MovieCard from './MovieCard';
 class MovieList extends Component {
   render() {
     return (
-    <div className='movie-list'>
-      {Movies.map(movie => <MovieCard movie={movie} />)}
-    </div>
+      <div className="movie-list">
+        {Movies.map((movie) => <MovieCard movie={movie} />)}
+      </div>
     );
   }
 }
