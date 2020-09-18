@@ -4,14 +4,15 @@ import MovieCard from './MovieCard';
 
 class MovieList extends Component {
   render() {
+    const { allItems } = this.props;
     return (
-      <div>
-        {this.props.movies.map((element) => <MovieCard movie={element} key={element.title} />)}
+      <div className="movie-list">
+        {allItems.map((element) => <MovieCard items={element} key={element.title} />)}
       </div>
     );
   }
 }
 
-MovieList.propTypes = { movies: PropTypes.shape(PropTypes.array).isRequired };
+MovieList.propTypes = { allItems: PropTypes.arrayOf(Object).isRequired };
 
 export default MovieList;

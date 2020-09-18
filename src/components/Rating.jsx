@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 
 class Rating extends Component {
   render() {
+    const { rating, color } = this.props;
     return (
       <p className="rating">
-        <br />
-        {this.props.rating}
+        {/* <div className={color}> */}
+          {`Rating ${rating}`}
+        {/* </div > */}
       </p>
     );
   }
