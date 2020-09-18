@@ -5,6 +5,7 @@ import MovieList from './components/MovieList';
 
 
 function App() {
+  const { movies } = this.props;
   return (
     <div className="App">
       <Header />
