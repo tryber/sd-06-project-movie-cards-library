@@ -112,7 +112,7 @@ describe('<MovieCard /> component', () => {
   });
 });
 
-describe.skip('<Rating /> component', () => {
+describe('<Rating /> component', () => {
   it('renders without crashing', () => {
     shallow(<Rating />);
   });
@@ -124,7 +124,7 @@ describe.skip('<Rating /> component', () => {
   });
 });
 
-describe.skip('<App /> component', () => {
+describe('<App /> component', () => {
   it('renders a `Header` component', () => {
     wrapper = shallow(<App />);
 
