@@ -8,20 +8,21 @@ class MovieCard extends React.Component {
 
     return (
       <div className="movie-card">
+        <img scr={imagePath} className="movie-card-image" alt={`{title} ${subtitle}`} />
         <div className="movie-card-body">
-          <img scr={imagePath} className="movie-card-image" alt={`{title} ${subtitle}`} />
           <h4 className="movie-card-title">{title}</h4>;
           <h5 className="movie-card-subtitle">{subtitle}</h5>
           <p className="movie-card-storyline">{storyline}</p>
         </div>
         <div className="movie-card-rating">
-          <Rating rating={rating} />
+          <Rating className="rating" rating={rating} />
         </div>
       </div>
     );
   }
 }
 
+MovieCard.defaultProps = { movie: {} };
 MovieCard.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string,
@@ -31,7 +32,5 @@ MovieCard.propTypes = {
     rating: PropTypes.number,
   }),
 };
-
-MovieCard.defaultProps = { movie: {} };
 
 export default MovieCard;
