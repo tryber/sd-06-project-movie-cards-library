@@ -1,12 +1,8 @@
 import React from 'react';
 import Rating from './Rating';
+import PropTypes from 'prop-types';
 
 class MovieCard extends React.Component {
-  constructor() {
-    super()
-
-  }
-
   render() {
     const { movie } = this.props;
     const { title, subtitle, storyline, imagePath, rating } = movie;
@@ -18,8 +14,12 @@ class MovieCard extends React.Component {
         <p>{storyline}</p>
         <Rating rating={rating} />
       </div>
-    )
+    );
   }
+}
+
+MovieCard.propTypes = {
+  movie: PropTypes.object,
 }
 
 export default MovieCard;
