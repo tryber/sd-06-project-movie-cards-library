@@ -13,13 +13,13 @@ class MovieCard extends React.Component {
           <p> {storyline} </p>
           <p> {rating}</p>
         </div>
-        <img src={imagePath} alt=' não encontrada' />
+        <img src={imagePath} alt="não encontrada" />
       </div>
     );
   }
 }
 
-MovieCard.propTypes = {  
+MovieCard.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   storyline: PropTypes.string.isRequired,
