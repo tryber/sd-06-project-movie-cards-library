@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/prop-types */
 import React from 'react';
 
@@ -8,7 +7,7 @@ class MovieCard extends React.Component {
 
     return (
       <div>
-        <img src={movie.imagePath} />
+        <img src={movie.imagePath} alt="" />
         <h2>{movie.title}</h2>
       </div>
     );
