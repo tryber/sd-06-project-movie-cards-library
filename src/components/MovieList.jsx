@@ -1,9 +1,20 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-// import MovieCard from './MovieCard';
+import MovieCard from './MovieCard';
 
 class MovieList extends React.Component {
   render() {
-    return null;
+    const { movies } = this.props;
+
+    return (
+      <div>
+        {
+          movies.map((element) => (
+            <MovieCard key={element.title} movie={element} />
+          ))
+        }
+      </div>
+    );
   }
 }
 
