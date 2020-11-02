@@ -3,7 +3,11 @@ import React from 'react';
 
 class MovieCard extends React.Component {
   render() {
-    return (null);
+    return (
+      <div>
+        <img src=""></img>
+      </div>
+    );
   }
 }
 
